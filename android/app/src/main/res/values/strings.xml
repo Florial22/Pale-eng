@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">pale</string>
+    <string name="title_activity_main">pale</string>
+    <string name="package_name">com.florial.pale</string>
+    <string name="custom_url_scheme">com.florial.pale</string>
+</resources>
