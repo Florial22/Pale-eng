@@ -4345,10 +4345,6 @@ export const medicalDeck: WordCardData[] = [
     difficulty: 'advanced'
   },
 
-  // ---------------------------------------
-  // 🔥 BELOW ARE THE 100 BRAND NEW ITEMS
-  // ---------------------------------------
-
   {
     id: 'medical-42',
     english: 'blood pressure',

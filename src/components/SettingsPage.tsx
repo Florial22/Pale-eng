@@ -175,7 +175,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
 
         {/* APP VERSION */}
         <p className="text-center text-slate-400 dark:text-slate-500 text-xs mt-12">
-          Pale v1.0.0
+          Pale v1.1.0
         </p>
       </div>
     </div>

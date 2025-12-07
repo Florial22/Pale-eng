@@ -1,16 +1,16 @@
 // src/capacitor/admob.ts
-import type { PluginListenerHandle } from '@capacitor/core';
-import { Capacitor } from '@capacitor/core';
+import { Capacitor } from "@capacitor/core";
 import {
   AdMob,
   BannerAdSize,
-  BannerAdPosition
-} from '@capacitor-community/admob';
+  BannerAdPosition,
+} from "@capacitor-community/admob";
 
 const isIOS = Capacitor.getPlatform() === "ios";
 
+// 🔹 Your real iOS ad units
 const IOS_BANNER_ID = "ca-app-pub-7033641693735994/6176167746";
-// const IOS_INTERSTITIAL_ID = "ca-app-pub-7033641693735994/1183695518"; // 👈 not used for now
+const IOS_INTERSTITIAL_ID = "ca-app-pub-7033641693735994/1183695518";
 
 export async function initAdMob() {
   if (!isIOS) {
@@ -34,7 +34,7 @@ export async function showBottomBanner() {
   try {
     await AdMob.showBanner({
       adId: IOS_BANNER_ID,
-      isTesting: false, 
+      isTesting: true,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
@@ -54,8 +54,25 @@ export async function hideBanner() {
   }
 }
 
-// 🚫 TEMPORARILY DISABLED FOR APP REVIEW
+// 🔹 Interstitial shown on demand (quiz exit / quiz finished)
 export async function showInterstitialOnce() {
-  console.log("ℹ️ Interstitials temporarily disabled for App Store review.");
-  return;
+  if (!isIOS) {
+    console.log("🔕 Interstitial disabled — non-iOS");
+    return;
+  }
+
+  try {
+    // 1) Load
+    await AdMob.prepareInterstitial({
+      adId: IOS_INTERSTITIAL_ID,
+      isTesting: true,
+      // ⚠️ No isTesting here → real interstitial
+    });
+
+    // 2) Show
+    await AdMob.showInterstitial();
+    console.log("🎬 Interstitial shown:", IOS_INTERSTITIAL_ID);
+  } catch (err) {
+    console.warn("❌ Interstitial error:", err);
+  }
 }
