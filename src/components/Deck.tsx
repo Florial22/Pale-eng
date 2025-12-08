@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { X, Check } from 'lucide-react';
-import { WordCardData } from '../types';
+import { WordCardData, TranslationPreference } from '../types';
 import { Card } from './Card';
 import swipeSound from '../assets/sounds/swipe_rl.mp3';
 import { playSound } from '../utils/sound';
@@ -14,6 +14,7 @@ interface DeckProps {
   isLoading: boolean;
   mode: DeckMode;
   soundOn: boolean;
+  translationPreference: TranslationPreference; // ✅ NEW
 }
 
 export const Deck: React.FC<DeckProps> = ({
@@ -23,6 +24,7 @@ export const Deck: React.FC<DeckProps> = ({
   isLoading,
   mode,
   soundOn,
+  translationPreference, // ✅ NEW
 }) => {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -205,7 +207,12 @@ export const Deck: React.FC<DeckProps> = ({
             transform: `scale(${nextCardScale}) translateY(${nextCardY}px)`,
           }}
         >
-          <Card key={nextCard.id} data={nextCard} active={false} />
+          <Card
+            key={nextCard.id}
+            data={nextCard}
+            active={false}
+            translationPreference={translationPreference} // ✅ NEW
+          />
           <div
             className="absolute inset-0 bg-white/40 rounded-2xl transition-opacity duration-75 pointer-events-none"
             style={{ opacity: 1 - swipeProgress }}
@@ -230,10 +237,10 @@ export const Deck: React.FC<DeckProps> = ({
             data={activeCard}
             active={true}
             onMouseDown={handleStart}
+            translationPreference={translationPreference} // ✅ NEW
           />
 
-          {/* LABELS — moved higher (top-2) + swapped sides */}
-
+          {/* LABELS */}
           {mode === 'learn' ? (
             <>
               {/* LEFT = "Don’t know it" */}

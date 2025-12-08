@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { Category, DeckState, WordCardData } from '../types';
+import { Category, DeckState, WordCardData, TranslationPreference } from '../types';
 import { Deck } from './Deck';
 import { decksByCategoryId } from '../data/wordDecks';
 import {
@@ -12,7 +12,8 @@ import {
 interface PracticePageProps {
   category: Category;
   onBack: () => void;
-  soundOn: boolean; 
+  soundOn: boolean;
+  translationPreference: TranslationPreference; // ✅ already added
 }
 
 type PracticeMode = 'learn' | 'review';
@@ -21,6 +22,7 @@ export const PracticePage: React.FC<PracticePageProps> = ({
   category,
   onBack,
   soundOn,
+  translationPreference, // ✅ already in props
 }) => {
   const [mode, setMode] = useState<PracticeMode>('learn');
   const [state, setState] = useState<DeckState>({
@@ -133,6 +135,7 @@ export const PracticePage: React.FC<PracticePageProps> = ({
           isLoading={isLoading}
           mode={mode}
           soundOn={soundOn}
+          translationPreference={translationPreference} // ✅ pass it down
         />
       </div>
 

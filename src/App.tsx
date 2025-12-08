@@ -4,7 +4,7 @@ import { HomePage } from "./components/HomePage";
 import { PracticePage } from "./components/PracticePage";
 import { SettingsPage } from "./components/SettingsPage";
 import { QuizPage } from "./components/QuizPage";
-import { Category } from "./types";
+import { Category, TranslationPreference } from "./types";
 import { initAdMob, showBottomBanner } from "./capacitor/admob";
 import {
   requestNotificationPermission,
@@ -26,10 +26,31 @@ export default function App() {
     return localStorage.getItem("soundOn") !== "false"; // default true
   });
 
+  // 🌍 NEW: translation preference
+  const [translationPreference, setTranslationPreference] =
+    useState<TranslationPreference>(() => {
+      if (typeof window === "undefined") return "auto";
+      const stored = localStorage.getItem("translationPreference");
+      if (
+        stored === "auto" ||
+        stored === "fr" ||
+        stored === "es" ||
+        stored === "none"
+      ) {
+        return stored as TranslationPreference;
+      }
+      return "auto";
+    });
+
   // persist sound
   useEffect(() => {
     localStorage.setItem("soundOn", String(soundOn));
   }, [soundOn]);
+
+  // persist translation preference
+  useEffect(() => {
+    localStorage.setItem("translationPreference", translationPreference);
+  }, [translationPreference]);
 
   // Ads
   useEffect(() => {
@@ -140,6 +161,8 @@ export default function App() {
               onThemeChange={setTheme}
               soundOn={soundOn}
               onSoundChange={setSoundOn}
+              translationPreference={translationPreference}
+              onTranslationChange={setTranslationPreference}
             />
           )}
 
@@ -148,6 +171,7 @@ export default function App() {
               category={currentCategory}
               onBack={backToHome}
               soundOn={soundOn}
+              translationPreference={translationPreference}
             />
           )}
 

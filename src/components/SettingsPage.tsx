@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { ArrowLeft, Bell, Moon, Sun, Volume2, VolumeX } from "lucide-react";
+import {
+  ArrowLeft,
+  Bell,
+  Moon,
+  Sun,
+  Volume2,
+  VolumeX,
+  Languages,
+} from "lucide-react";
 import {
   requestNotificationPermission,
   scheduleDailyReminder,
   cancelDailyReminder,
 } from "../capacitor/notifications";
 import { Theme } from "../utils/theme";
+import type { TranslationPreference } from "../types";
 
 interface SettingsPageProps {
   onBack: () => void;
@@ -13,6 +22,10 @@ interface SettingsPageProps {
   onThemeChange: (theme: Theme) => void;
   soundOn: boolean;
   onSoundChange: (value: boolean) => void;
+
+  // 🔤 NEW: translation preference props
+  translationPreference: TranslationPreference;
+  onTranslationChange: (value: TranslationPreference) => void;
 }
 
 export const SettingsPage: React.FC<SettingsPageProps> = ({
@@ -21,6 +34,8 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
   onThemeChange,
   soundOn,
   onSoundChange,
+  translationPreference,
+  onTranslationChange,
 }) => {
   const [notificationsOn, setNotificationsOn] = useState(false);
 
@@ -32,7 +47,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
   const toggleSound = () => {
     const newValue = !soundOn;
     onSoundChange(newValue);
-    // localStorage is handled in App, so no need to write here
+    // localStorage is handled in App
   };
 
   // NOTIFICATIONS
@@ -60,6 +75,11 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
   const changeTheme = (val: Theme) => {
     onThemeChange(val);
     localStorage.setItem("theme", val);
+  };
+
+  const changeTranslationPref = (val: TranslationPreference) => {
+    onTranslationChange(val);
+    localStorage.setItem("translationPreference", val);
   };
 
   return (
@@ -169,6 +189,64 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
             >
               <Sun className="w-5 h-5" />
               System
+            </button>
+          </div>
+        </div>
+
+        {/* 🌐 TRANSLATION LANGUAGE */}
+        <div className="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+          <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-3 flex items-center gap-2">
+            <Languages className="w-4 h-4 text-slate-500 dark:text-slate-300" />
+            Translation language
+          </h3>
+
+          <p className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
+            Choose languge translations appear on the back of your cards.
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => changeTranslationPref("auto")}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium border ${
+                translationPreference === "auto"
+                  ? "bg-indigo-50 border-indigo-400 text-indigo-700"
+                  : "bg-transparent border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200"
+              }`}
+            >
+              Auto (device language)
+            </button>
+
+            <button
+              onClick={() => changeTranslationPref("fr")}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium border ${
+                translationPreference === "fr"
+                  ? "bg-indigo-50 border-indigo-400 text-indigo-700"
+                  : "bg-transparent border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200"
+              }`}
+            >
+              Français
+            </button>
+
+            <button
+              onClick={() => changeTranslationPref("es")}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium border ${
+                translationPreference === "es"
+                  ? "bg-indigo-50 border-indigo-400 text-indigo-700"
+                  : "bg-transparent border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200"
+              }`}
+            >
+              Español
+            </button>
+
+            <button
+              onClick={() => changeTranslationPref("none")}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium border ${
+                translationPreference === "none"
+                  ? "bg-indigo-50 border-indigo-400 text-indigo-700"
+                  : "bg-transparent border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200"
+              }`}
+            >
+              No translation
             </button>
           </div>
         </div>

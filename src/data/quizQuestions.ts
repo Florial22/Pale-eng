@@ -9315,20 +9315,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     ],
     correctIndex: 0
   },
-  {
-    id: "medical-q235",
-    categoryId: MEDICAL_CATEGORY_ID,
-    wordId: "medical-235",
-    type: "drag",
-    prompt: "We will ____ him ____ the ventilator slowly.",
-    options: [
-      "wean / off",
-      "taper / up",
-      "follow / on",
-      "start / on"
-    ],
-    correctIndex: 0
-  },
+  
   {
     id: "medical-q236",
     categoryId: MEDICAL_CATEGORY_ID,
@@ -12450,33 +12437,8 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['set off', 'stopped over', 'took off', 'checked out'],
     correctIndex: 1
   },
-  {
-    id: 'travel-q66',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-66',
-    type: 'drag',
-    prompt: 'The shuttle will ____ you ____ at the airport.',
-    options: ['drop', 'off', 'pick', 'up'],
-    correctIndex: 1 // correct phrase is "drop off"; index 1 corresponds to 'off' in a UI where "drop" is prefilled; adapt as needed
-  },
-  {
-    id: 'travel-q67',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-67',
-    type: 'drag',
-    prompt: 'My friend will ____ me ____ at the station.',
-    options: ['pick / up', 'set / off', 'head / back', 'check / in'],
-    correctIndex: 0
-  },
-  {
-    id: 'travel-q68',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-68',
-    type: 'drag',
-    prompt: 'We went to the airport to ____ them ____. ',
-    options: ['see / off', 'pick / up', 'drop / off', 'set / off'],
-    correctIndex: 0
-  },
+  
+  
   {
     id: 'travel-q69',
     categoryId: TRAVEL_CATEGORY_ID,
@@ -12768,15 +12730,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['travel itinerary', 'travel buddy', 'toll road', 'gas station list'],
     correctIndex: 0
   },
-  {
-    id: 'travel-q101',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-101',
-    type: 'choice',
-    prompt: 'Which expression means “compagnon de voyage” in English?',
-    options: ['travel companion', 'travel buddy', 'tour guide', 'local guide'],
-    correctIndex: 0
-  },
+  
   {
     id: 'travel-q102',
     categoryId: TRAVEL_CATEGORY_ID,
@@ -12802,15 +12756,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'The country announced a temporary ____. ',
     options: ['travel ban', 'travel voucher', 'travel journal', 'staycation'],
-    correctIndex: 0
-  },
-  {
-    id: 'travel-q105',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-105',
-    type: 'choice',
-    prompt: 'Which expression refers to “documents de voyage”?',
-    options: ['travel documents', 'travel brochure', 'travel checklist', 'travel blog'],
     correctIndex: 0
   },
   {
@@ -12860,15 +12805,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
 
   {
-    id: 'travel-q111',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-111',
-    type: 'choice',
-    prompt: 'Which option best matches “covoiturage”?',
-    options: ['carpool', 'road trip', 'group tour', 'day trip'],
-    correctIndex: 0
-  },
-  {
     id: 'travel-q112',
     categoryId: TRAVEL_CATEGORY_ID,
     wordId: 'travel-112',
@@ -12911,15 +12847,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'The flight had light ____. ',
     options: ['turbulence', 'travel delay', 'jet lag', 'motion sickness'],
-    correctIndex: 0
-  },
-  {
-    id: 'travel-q117',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-117',
-    type: 'choice',
-    prompt: 'Which kind of shop sells products “hors taxes”?',
-    options: ['duty-free shop', 'local market', 'tourist trap', 'lost and found'],
     correctIndex: 0
   },
   {
@@ -13192,13 +13119,13 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'travel-q147',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-147',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “se perdre”?',
-    options: ['get lost', 'look around', 'run late', 'pack up'],
-    correctIndex: 0
+    "id": "travel-q147",
+    "categoryId": TRAVEL_CATEGORY_ID,
+    "wordId": "travel-147",
+    "type": "choice",
+    "prompt": "Which phrasal verb means to become unable to find your way?",
+    "options": ["get lost", "look around", "run late", "pack up"],
+    "correctIndex": 0
   },
   {
     id: 'travel-q148',
@@ -13218,15 +13145,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['You are behind schedule', 'You are very early', 'You are lost', 'You cancelled the trip'],
     correctIndex: 0
   },
-  {
-    id: 'travel-q150',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-150',
-    type: 'drag',
-    prompt: 'Heavy traffic ____ us ____ for 30 minutes.',
-    options: ['held', 'up', 'packed', 'in'],
-    correctIndex: 1 // assuming UI pre-fills "held" and you choose "up"
-  },
+  
 
   {
     id: 'travel-q151',
@@ -13246,14 +13165,14 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['filled up', 'packed up', 'pulled over', 'ran late'],
     correctIndex: 0
   },
-  {
-    id: 'travel-q153',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-153',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “se ranger sur le côté” with a car?',
-    options: ['pull over', 'run late', 'look around', 'check in'],
-    correctIndex: 0
+    {
+    "id": "travel-q153",
+    "categoryId": TRAVEL_CATEGORY_ID,
+    "wordId": "travel-153",
+    "type": "choice",
+    "prompt": "Which phrasal verb means to stop your car at the side of the road?",
+    "options": ["pull over", "run late", "look around", "check in"],
+    "correctIndex": 0
   },
   {
     id: 'travel-q154',
@@ -13283,13 +13202,13 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'travel-q157',
-    categoryId: TRAVEL_CATEGORY_ID,
-    wordId: 'travel-157',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “faire ses bagages”?',
-    options: ['pack up', 'look around', 'pull over', 'stop by'],
-    correctIndex: 0
+    "id": "travel-q157",
+    "categoryId": TRAVEL_CATEGORY_ID,
+    "wordId": "travel-157",
+    "type": "choice",
+    "prompt": "Which phrasal verb means to gather your things and prepare your bags?",
+    "options": ["pack up", "look around", "pull over", "stop by"],
+    "correctIndex": 0
   },
   {
     id: 'travel-q158',
@@ -13696,7 +13615,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-1',
     type: 'choice',
-    prompt: 'Which phrasal verb means “bien s’entendre avec quelqu’un”?',
+    prompt: 'Which phrasal verb means getting along well with someone?',
     options: ['get along with', 'fit in', 'hang out', 'bond with'],
     correctIndex: 0
   },
@@ -13732,7 +13651,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-5',
     type: 'choice',
-    prompt: 'Which expression means “rester en contact”?',
+    prompt: 'Which expression refers to staying connected with someone?',
     options: ['keep in touch', 'lose touch', 'cut someone off', 'ghost someone'],
     correctIndex: 0
   },
@@ -13750,7 +13669,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-7',
     type: 'choice',
-    prompt: 'During the trip, he started to create strong emotional connections with his teammates. Which verb describes this?',
+    prompt: 'During the trip, he started forming strong emotional connections with his teammates. Which verb describes this?',
     options: ['bond with', 'argue with', 'avoid', 'ghost'],
     correctIndex: 0
   },
@@ -13768,7 +13687,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-9',
     type: 'choice',
-    prompt: 'Which expression means “apprendre à connaître quelqu’un”?',
+    prompt: 'Which expression describes gradually learning about someone?',
     options: ['get to know someone', 'judge someone', 'avoid someone', 'criticize someone'],
     correctIndex: 0
   },
@@ -13787,7 +13706,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-11',
     type: 'choice',
-    prompt: 'Which idiom means “bien s’entendre dès le début”?',
+    prompt: 'Which idiom describes getting along well from the very beginning?',
     options: ['hit it off', 'fall out with', 'move on', 'stand out'],
     correctIndex: 0
   },
@@ -13805,7 +13724,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-13',
     type: 'choice',
-    prompt: 'When you form new friendships, you do what?',
+    prompt: 'When you form new friendships, what do you do?',
     options: ['make friends', 'break the ice', 'cut people off', 'spread rumors'],
     correctIndex: 0
   },
@@ -13823,7 +13742,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-15',
     type: 'choice',
-    prompt: 'Which idiom means “briser la glace” in a new group?',
+    prompt: 'Which idiom describes helping people feel comfortable when they first meet?',
     options: ['break the ice', 'break up', 'break a promise', 'break someone’s trust'],
     correctIndex: 0
   },
@@ -13841,7 +13760,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-17',
     type: 'choice',
-    prompt: 'Talking about simple, casual topics with strangers is called what?',
+    prompt: 'Talking about casual topics with strangers is called what?',
     options: ['making small talk', 'breaking up', 'moving on', 'falling in love'],
     correctIndex: 0
   },
@@ -13859,7 +13778,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-19',
     type: 'choice',
-    prompt: 'Which expression means “faire confiance à quelqu’un”?',
+    prompt: 'Which expression describes choosing to trust someone?',
     options: ['trust someone', 'judge someone', 'avoid someone', 'criticize someone'],
     correctIndex: 0
   },
@@ -13878,7 +13797,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-21',
     type: 'choice',
-    prompt: 'When you “donner un conseil à quelqu’un”, what do you do?',
+    prompt: 'When you offer someone guidance, what are you doing?',
     options: ['give someone advice', 'spread rumors', 'argue with someone', 'ignore someone'],
     correctIndex: 0
   },
@@ -13896,7 +13815,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-23',
     type: 'choice',
-    prompt: 'Which idiom means “être là pour quelqu’un”?',
+    prompt: 'Which idiom describes being available to help someone?',
     options: ['be there for someone', 'be offended', 'be popular', 'be too pushy'],
     correctIndex: 0
   },
@@ -13914,10 +13833,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-25',
     type: 'choice',
-    prompt: 'Which phrasal verb means “compter sur quelqu’un”?',
+    prompt: 'Which phrasal verb means relying on someone?',
     options: ['count on someone', 'fall out with someone', 'block someone', 'stand out'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q26',
     categoryId: REL_CATEGORY_ID,
@@ -13932,7 +13852,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-27',
     type: 'choice',
-    prompt: 'Which idiom means “s’appuyer sur quelqu’un” for emotional support?',
+    prompt: 'Which idiom refers to relying on someone for emotional support?',
     options: ['lean on someone', 'ghost someone', 'block someone', 'cut someone off'],
     correctIndex: 0
   },
@@ -13950,7 +13870,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-29',
     type: 'choice',
-    prompt: 'Which phrasal verb means “s’occuper de quelqu’un”?',
+    prompt: 'Which phrasal verb describes taking care of someone?',
     options: ['look after someone', 'look around', 'look forward to', 'look down on'],
     correctIndex: 0
   },
@@ -13969,7 +13889,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-31',
     type: 'choice',
-    prompt: 'Which expression means “inviter quelqu’un chez soi”?',
+    prompt: 'Which expression refers to inviting someone to your home?',
     options: ['invite someone over', 'invite someone out', 'cut someone off', 'report someone'],
     correctIndex: 0
   },
@@ -13987,7 +13907,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-33',
     type: 'choice',
-    prompt: 'Which idiom means “organiser une fête”?',
+    prompt: 'Which idiom means organizing a celebration or event?',
     options: ['throw a party', 'break a promise', 'make small talk', 'move on'],
     correctIndex: 0
   },
@@ -14005,10 +13925,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-35',
     type: 'choice',
-    prompt: 'Which phrase means “rejoindre le groupe”?',
+    prompt: 'Which phrase means joining a group of people?',
     options: ['join the group', 'leave the group', 'avoid the group', 'argue with the group'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q36',
     categoryId: REL_CATEGORY_ID,
@@ -14023,7 +13944,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-37',
     type: 'choice',
-    prompt: 'Which phrasal verb means “se fondre dans le groupe”?',
+    prompt: 'Which phrasal verb describes blending naturally into a group?',
     options: ['blend in', 'stand out', 'fall out', 'break up'],
     correctIndex: 0
   },
@@ -14041,7 +13962,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-39',
     type: 'choice',
-    prompt: 'Which expression means “être populaire”?',
+    prompt: 'Which expression refers to being well-liked by many people?',
     options: ['be popular', 'be offended', 'be too clingy', 'be criticized'],
     correctIndex: 0
   },
@@ -14060,7 +13981,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-41',
     type: 'choice',
-    prompt: 'Which idiom means “faire une bonne impression”?',
+    prompt: 'Which idiom describes creating a positive first impression?',
     options: ['make a good impression', 'make a promise', 'make small talk', 'make up'],
     correctIndex: 0
   },
@@ -14078,7 +13999,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-43',
     type: 'choice',
-    prompt: 'Which expression means “garder une promesse”?',
+    prompt: 'Which expression means honoring a commitment?',
     options: ['keep a promise', 'break a promise', 'break up', 'give up'],
     correctIndex: 0
   },
@@ -14096,10 +14017,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-45',
     type: 'choice',
-    prompt: 'Which expression means “avoir un désaccord”?',
+    prompt: 'Which expression describes having a disagreement with someone?',
     options: ['have a disagreement', 'have a crush', 'have trust issues', 'have someone’s back'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q46',
     categoryId: REL_CATEGORY_ID,
@@ -14114,7 +14036,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-47',
     type: 'choice',
-    prompt: 'Which phrasal verb means “se réconcilier après une dispute”?',
+    prompt: 'Which phrasal verb refers to reconciling after a conflict?',
     options: ['make up', 'fall out', 'move on', 'block someone'],
     correctIndex: 0
   },
@@ -14132,7 +14054,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-49',
     type: 'choice',
-    prompt: 'Which verb means “pardonner à quelqu’un”?',
+    prompt: 'Which verb describes forgiving another person?',
     options: ['forgive someone', 'avoid someone', 'criticize someone', 'block someone'],
     correctIndex: 0
   },
@@ -14151,7 +14073,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-51',
     type: 'choice',
-    prompt: 'If “il a été critiqué pour son comportement”, what happened?',
+    prompt: 'If someone is criticized for their behavior, what happened?',
     options: ['He got criticized', 'He got promoted', 'He got invited', 'He got trusted'],
     correctIndex: 0
   },
@@ -14169,7 +14091,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-53',
     type: 'choice',
-    prompt: 'Which verb means “faire un compliment”?',
+    prompt: 'Which verb describes giving someone a compliment?',
     options: ['compliment someone', 'judge someone', 'block someone', 'report someone'],
     correctIndex: 0
   },
@@ -14187,10 +14109,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-55',
     type: 'choice',
-    prompt: 'Which expression means “se vexer”?',
+    prompt: 'Which expression refers to feeling upset or offended?',
     options: ['take offense', 'take a break', 'take a chance', 'take it easy'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q56',
     categoryId: REL_CATEGORY_ID,
@@ -14205,7 +14128,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-57',
     type: 'choice',
-    prompt: 'Which phrase means “être honnête avec quelqu’un”?',
+    prompt: 'Which phrase means being truthful with someone?',
     options: ['be honest with', 'be offended by', 'be too clingy with', 'be popular with'],
     correctIndex: 0
   },
@@ -14223,7 +14146,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-59',
     type: 'choice',
-    prompt: 'Which expression means “dire un mensonge”?',
+    prompt: 'Which expression means saying something that is not true?',
     options: ['tell a lie', 'tell the truth', 'tell a joke', 'tell a story only once'],
     correctIndex: 0
   },
@@ -14242,7 +14165,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-61',
     type: 'choice',
-    prompt: 'Which expression means “problèmes de confiance”?',
+    prompt: 'Which expression refers to having difficulty trusting others?',
     options: ['trust issues', 'trust limits', 'trust access', 'trust account'],
     correctIndex: 0
   },
@@ -14260,7 +14183,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-63',
     type: 'choice',
-    prompt: 'Which expression means “gagner la confiance de quelqu’un”?',
+    prompt: 'Which expression means building someone’s confidence in you?',
     options: ['earn someone’s trust', 'break someone’s trust', 'judge someone', 'block someone'],
     correctIndex: 0
   },
@@ -14278,7 +14201,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-65',
     type: 'choice',
-    prompt: 'Which idiom means “accorder le bénéfice du doute”?',
+    prompt: 'Which idiom refers to assuming the best in someone when you’re unsure?',
     options: [
       'give someone the benefit of the doubt',
       'give someone advice',
@@ -14287,6 +14210,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     ],
     correctIndex: 0
   },
+
   {
     id: 'rel-q66',
     categoryId: REL_CATEGORY_ID,
@@ -14301,7 +14225,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-67',
     type: 'choice',
-    prompt: 'Which phrasal verb means “clarifier les choses”?',
+    prompt: 'Which phrasal verb describes making a situation clearer?',
     options: ['clear things up', 'cut someone off', 'move on', 'fall out'],
     correctIndex: 0
   },
@@ -14319,7 +14243,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-69',
     type: 'choice',
-    prompt: 'Which idiom means “discuter pour régler un problème”?',
+    prompt: 'Which idiom refers to discussing a problem to find a solution?',
     options: ['talk things out', 'talk behind backs', 'break the ice', 'spread rumors'],
     correctIndex: 0
   },
@@ -14338,7 +14262,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-71',
     type: 'choice',
-    prompt: 'Which idiom means “laisser de l’espace à quelqu’un”?',
+    prompt: 'Which idiom refers to allowing someone privacy or distance?',
     options: ['give someone space', 'give someone a hug', 'give someone a ride', 'give someone up'],
     correctIndex: 0
   },
@@ -14356,7 +14280,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-73',
     type: 'choice',
-    prompt: 'Which idiom means “dépasser les limites”?',
+    prompt: 'Which idiom refers to overstepping limits?',
     options: ['cross the line', 'hit it off', 'fit in', 'clear things up'],
     correctIndex: 0
   },
@@ -14374,10 +14298,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-75',
     type: 'choice',
-    prompt: 'Which expression means “être trop collant” in a relationship?',
+    prompt: 'Which expression refers to being overly attached to someone?',
     options: ['be too clingy', 'be too busy', 'be too honest', 'be too friendly'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q76',
     categoryId: REL_CATEGORY_ID,
@@ -14392,7 +14317,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-77',
     type: 'choice',
-    prompt: 'Which expression means “accepter un compliment”?',
+    prompt: 'Which expression means accepting a compliment politely?',
     options: ['accept a compliment', 'spread a compliment', 'break a compliment', 'block a compliment'],
     correctIndex: 0
   },
@@ -14410,7 +14335,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-79',
     type: 'choice',
-    prompt: 'Which idiom means “avoir le béguin pour quelqu’un”?',
+    prompt: 'Which idiom describes having romantic feelings for someone?',
     options: ['have a crush on', 'have trust issues with', 'have a fight with', 'have a date with'],
     correctIndex: 0
   },
@@ -14429,7 +14354,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-81',
     type: 'choice',
-    prompt: 'Which expression means “aller à un rendez-vous amoureux”?',
+    prompt: 'Which expression refers to going on a romantic outing?',
     options: ['go on a date', 'go on a break', 'go on a trip', 'go on a walk'],
     correctIndex: 0
   },
@@ -14447,7 +14372,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-83',
     type: 'choice',
-    prompt: 'Which idiom means “tomber amoureux”?',
+    prompt: 'Which idiom describes developing romantic feelings?',
     options: ['fall in love', 'fall apart', 'fall behind', 'fall asleep'],
     correctIndex: 0
   },
@@ -14465,10 +14390,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-85',
     type: 'choice',
-    prompt: 'Which phrasal verb means “se remettre ensemble”?',
+    prompt: 'Which phrasal verb refers to getting back together after a breakup?',
     options: ['get back together', 'get along with', 'get over', 'get away'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q86',
     categoryId: REL_CATEGORY_ID,
@@ -14483,7 +14409,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-87',
     type: 'choice',
-    prompt: 'Which idiom means “coup de foudre”?',
+    prompt: 'Which idiom refers to instantly falling in love?',
     options: ['love at first sight', 'love in the long run', 'fall out of love', 'talk things out'],
     correctIndex: 0
   },
@@ -14501,7 +14427,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-89',
     type: 'choice',
-    prompt: 'Which expression means “se serrer la main”?',
+    prompt: 'Which expression describes greeting someone by shaking hands?',
     options: ['shake hands', 'give hands', 'lose hands', 'make hands'],
     correctIndex: 0
   },
@@ -14520,7 +14446,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-91',
     type: 'choice',
-    prompt: 'Which expression means “sourire à quelqu’un”?',
+    prompt: 'Which expression describes smiling in someone’s direction?',
     options: ['smile at someone', 'judge someone', 'report someone', 'block someone'],
     correctIndex: 0
   },
@@ -14538,7 +14464,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-93',
     type: 'choice',
-    prompt: 'Which verb means “éviter quelqu’un”?',
+    prompt: 'Which verb describes avoiding someone?',
     options: ['avoid someone', 'hug someone', 'praise someone', 'invite someone over'],
     correctIndex: 0
   },
@@ -14556,10 +14482,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-95',
     type: 'choice',
-    prompt: 'On social media, which slang verb means “ne plus répondre à quelqu’un”?',
+    prompt: 'On social media, which slang verb means to stop replying to someone?',
     options: ['ghost someone', 'hug someone', 'host someone', 'compliment someone'],
     correctIndex: 0
   },
+
   {
     id: 'rel-q96',
     categoryId: REL_CATEGORY_ID,
@@ -14574,7 +14501,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-97',
     type: 'choice',
-    prompt: 'Which verb means “signaler quelqu’un” (for bad behaviour)?',
+    prompt: 'Which verb refers to reporting someone for inappropriate behavior?',
     options: ['report someone', 'respect someone', 'flirt with someone', 'invite someone over'],
     correctIndex: 0
   },
@@ -14588,15 +14515,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'rel-q99',
-    categoryId: REL_CATEGORY_ID,
-    wordId: 'rel-99',
-    type: 'choice',
-    prompt: 'On Instagram, what do you do when you “suivre quelqu’un”?',
-    options: ['follow someone', 'block someone', 'report someone', 'ghost someone'],
-    correctIndex: 0
-  },
-  {
     id: 'rel-q100',
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-100',
@@ -14605,15 +14523,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['DM’d', 'blocked', 'ignored', 'reported'],
     correctIndex: 0
   },
-  {
-    id: 'rel-q101',
-    categoryId: REL_CATEGORY_ID,
-    wordId: 'rel-101',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “contacter quelqu’un / tendre la main à quelqu’un”?',
-    options: ['reach out to someone', 'cut someone off', 'look down on someone', 'ghost someone'],
-    correctIndex: 0
-  },
+  
   {
     id: 'rel-q102',
     categoryId: REL_CATEGORY_ID,
@@ -14639,15 +14549,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'We decided to ____ a group chat for the project.',
     options: ['start', 'break', 'ignore', 'block'],
-    correctIndex: 0
-  },
-  {
-    id: 'rel-q105',
-    categoryId: REL_CATEGORY_ID,
-    wordId: 'rel-105',
-    type: 'choice',
-    prompt: 'Which expression means “répondre à un message”?',
-    options: ['reply to a message', 'spread a message', 'ignore a message', 'report a message'],
     correctIndex: 0
   },
   {
@@ -14682,7 +14583,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-109',
     type: 'choice',
-    prompt: 'Which expression means “aimer une publication” on social media?',
+    prompt: 'On social media, which expression means showing that you like a post?',
     options: ['like a post', 'judge a post', 'block a post', 'ghost a post'],
     correctIndex: 0
   },
@@ -14701,7 +14602,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-111',
     type: 'choice',
-    prompt: 'Which expression means “trouver un compromis”?',
+    prompt: 'Which expression means finding a middle solution in a disagreement?',
     options: ['reach a compromise', 'reach a limit', 'reach a decision alone', 'reach for help'],
     correctIndex: 0
   },
@@ -14719,7 +14620,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-113',
     type: 'choice',
-    prompt: 'What should you avoid doing to “la personne qui parle”?',
+    prompt: 'What should you avoid doing to the person who is speaking?',
     options: ['interrupt the speaker', 'show interest', 'make eye contact', 'listen actively'],
     correctIndex: 0
   },
@@ -14737,7 +14638,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-115',
     type: 'choice',
-    prompt: 'Which idiom means “être sur la même longueur d’onde”?',
+    prompt: 'Which idiom means thinking the same way about something?',
     options: ['be on the same page', 'be on bad terms', 'be left out', 'be shy around strangers'],
     correctIndex: 0
   },
@@ -14755,7 +14656,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-117',
     type: 'choice',
-    prompt: 'In a meeting, if someone “soutient quelqu’un”, what do they do?',
+    prompt: 'In a meeting, if someone supports another person, what do they do?',
     options: ['back someone up', 'cut someone off', 'ghost someone', 'look down on someone'],
     correctIndex: 0
   },
@@ -14768,15 +14669,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['stood', 'fell', 'broke', 'ran'],
     correctIndex: 0
   },
-  {
-    id: 'rel-q119',
-    categoryId: REL_CATEGORY_ID,
-    wordId: 'rel-119',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “parler franchement / se manifester”?',
-    options: ['speak up', 'move on', 'drift apart', 'fall out'],
-    correctIndex: 0
-  },
+
   {
     id: 'rel-q120',
     categoryId: REL_CATEGORY_ID,
@@ -14792,7 +14685,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-121',
     type: 'choice',
-    prompt: 'Which expression means “partager son opinion”?',
+    prompt: 'Which expression means expressing what you think?',
     options: ['share your opinion', 'keep a secret', 'avoid the topic', 'change the subject'],
     correctIndex: 0
   },
@@ -14810,7 +14703,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-123',
     type: 'choice',
-    prompt: 'Which expression means “parler chacun son tour”?',
+    prompt: 'Which expression means speaking one at a time?',
     options: ['take turns speaking', 'talk over everyone', 'shout together', 'speak nonstop'],
     correctIndex: 0
   },
@@ -14828,7 +14721,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-125',
     type: 'choice',
-    prompt: 'Which expression means “interrompre poliment”?',
+    prompt: 'Which expression means interrupting someone in a polite way?',
     options: ['interrupt politely', 'interrupt rudely', 'change your tone', 'stay silent'],
     correctIndex: 0
   },
@@ -14846,7 +14739,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-127',
     type: 'choice',
-    prompt: 'Which expression means “regarder dans les yeux”?',
+    prompt: 'Which expression means looking someone in the eyes?',
     options: ['make eye contact', 'make small talk', 'make peace', 'make excuses'],
     correctIndex: 0
   },
@@ -14864,7 +14757,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-129',
     type: 'choice',
-    prompt: 'Which expression means “donner toute son attention à quelqu’un”?',
+    prompt: 'Which expression means giving someone your full attention?',
     options: [
       'give someone your full attention',
       'give someone a hard time',
@@ -14888,7 +14781,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-131',
     type: 'choice',
-    prompt: 'Which phrasal verb means “calmer la situation”?',
+    prompt: 'Which phrasal verb means making a situation less tense?',
     options: ['calm things down', 'escalate the situation', 'drift apart', 'move on'],
     correctIndex: 0
   },
@@ -14901,15 +14794,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['escalated', 'calmed', 'ignored', 'healed'],
     correctIndex: 0
   },
-  {
-    id: 'rel-q133',
-    categoryId: REL_CATEGORY_ID,
-    wordId: 'rel-133',
-    type: 'choice',
-    prompt: 'Which idiom means “arranger les choses / apaiser la situation”?',
-    options: ['smooth things over', 'hold a grudge', 'take a step back', 'move past something'],
-    correctIndex: 0
-  },
+
   {
     id: 'rel-q134',
     categoryId: REL_CATEGORY_ID,
@@ -14924,7 +14809,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-135',
     type: 'choice',
-    prompt: 'Which idiom means “voir l’autre côté (du point de vue)”?',
+    prompt: 'Which idiom means trying to see the other side of a situation?',
     options: ['see the other side', 'be on bad terms', 'break into a conversation', 'take turns speaking'],
     correctIndex: 0
   },
@@ -14942,7 +14827,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-137',
     type: 'choice',
-    prompt: 'Which expression means “faire preuve d’empathie”?',
+    prompt: 'Which expression means showing empathy?',
     options: ['show empathy', 'show off', 'show fear', 'show distance'],
     correctIndex: 0
   },
@@ -14960,7 +14845,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-139',
     type: 'choice',
-    prompt: 'Which expression means “être patient avec quelqu’un”?',
+    prompt: 'Which expression means being patient with someone?',
     options: ['be patient with someone', 'be shy around someone', 'be offended by someone', 'be on bad terms'],
     correctIndex: 0
   },
@@ -14979,7 +14864,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-141',
     type: 'choice',
-    prompt: 'Which expression means “dire merci”?',
+    prompt: 'Which expression means saying thank you?',
     options: ['say thank you', 'say nothing', 'say goodbye only', 'say rumors'],
     correctIndex: 0
   },
@@ -14997,7 +14882,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-143',
     type: 'choice',
-    prompt: 'Which idiom means “prendre quelqu’un pour acquis”?',
+    prompt: 'Which idiom means not appreciating someone because you assume they will always be there?',
     options: [
       'take someone for granted',
       'take someone out',
@@ -15020,7 +14905,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-145',
     type: 'choice',
-    prompt: 'Which expression means “dépasser les limites de quelqu’un”?',
+    prompt: 'Which expression means going past someone’s personal limits?',
     options: [
       'cross someone’s boundaries',
       'keep a professional distance',
@@ -15043,7 +14928,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-147',
     type: 'choice',
-    prompt: 'Which expression means “partager un secret”?',
+    prompt: 'Which expression means telling someone a secret?',
     options: ['share a secret', 'hide a secret', 'break a secret', 'delete a secret'],
     correctIndex: 0
   },
@@ -15061,8 +14946,13 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-149',
     type: 'choice',
-    prompt: 'Which expression means “blesser les sentiments de quelqu’un”?',
-    options: ['hurt someone’s feelings', 'share someone’s feelings', 'hide someone’s feelings', 'praise someone’s feelings'],
+    prompt: 'Which expression means hurting someone emotionally?',
+    options: [
+      'hurt someone’s feelings',
+      'share someone’s feelings',
+      'hide someone’s feelings',
+      'praise someone’s feelings'
+    ],
     correctIndex: 0
   },
   {
@@ -15080,7 +14970,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-151',
     type: 'choice',
-    prompt: 'Which expression means “se présenter”?',
+    prompt: 'Which expression means telling people who you are?',
     options: ['introduce yourself', 'introduce someone', 'exclude someone', 'avoid someone'],
     correctIndex: 0
   },
@@ -15121,7 +15011,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-155',
     type: 'choice',
-    prompt: 'Which expression means “garder une distance professionnelle”?',
+    prompt: 'Which expression means keeping a professional distance?',
     options: [
       'keep a professional distance',
       'keep a secret',
@@ -15144,7 +15034,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-157',
     type: 'choice',
-    prompt: 'Which expression means “demander un service”?',
+    prompt: 'Which expression means asking someone to do something for you?',
     options: ['ask for a favor', 'ask for a fight', 'ask for trouble', 'ask for gossip'],
     correctIndex: 0
   },
@@ -15162,7 +15052,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-159',
     type: 'choice',
-    prompt: 'Which idiom means “rendre la pareille”?',
+    prompt: 'Which idiom means returning a favor?',
     options: ['return the favor', 'break the favor', 'lose the favor', 'hide the favor'],
     correctIndex: 0
   },
@@ -15181,7 +15071,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-161',
     type: 'choice',
-    prompt: 'Which expression means “se sentir exclu”?',
+    prompt: 'Which expression means feeling like you are not included?',
     options: ['feel left out', 'feel connected', 'feel in touch', 'feel appreciated'],
     correctIndex: 0
   },
@@ -15199,7 +15089,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-163',
     type: 'choice',
-    prompt: 'Which verb means “exclure quelqu’un”?',
+    prompt: 'Which verb means leaving someone out on purpose?',
     options: ['exclude someone', 'include someone', 'cheer someone on', 'praise someone'],
     correctIndex: 0
   },
@@ -15217,7 +15107,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-165',
     type: 'choice',
-    prompt: 'Which idiom means “tenir tête à un intimidateur”?',
+    prompt: 'Which idiom means standing up to a bully?',
     options: [
       'stand up to a bully',
       'look up to a bully',
@@ -15240,7 +15130,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-167',
     type: 'choice',
-    prompt: 'Which phrasal verb means “mépriser quelqu’un”?',
+    prompt: 'Which phrasal verb means looking down on someone?',
     options: ['look down on someone', 'look after someone', 'look for someone', 'look up to someone'],
     correctIndex: 0
   },
@@ -15258,7 +15148,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-169',
     type: 'choice',
-    prompt: 'Which expression means “être un modèle”?',
+    prompt: 'Which expression means being someone others want to copy?',
     options: ['be a role model', 'be a bully', 'be left out', 'be shy around strangers'],
     correctIndex: 0
   },
@@ -15277,7 +15167,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-171',
     type: 'choice',
-    prompt: 'Which expression means “être proche de quelqu’un”?',
+    prompt: 'Which expression means having a close relationship with someone?',
     options: ['be close to someone', 'be shy around someone', 'be on bad terms', 'be left out'],
     correctIndex: 0
   },
@@ -15295,7 +15185,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-173',
     type: 'choice',
-    prompt: 'Which phrasal verb also means “s’éloigner petit à petit”?',
+    prompt: 'Which phrasal verb also means slowly growing apart from someone?',
     options: ['drift apart', 'move on', 'stand up', 'break into'],
     correctIndex: 0
   },
@@ -15313,7 +15203,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-175',
     type: 'choice',
-    prompt: 'Which idiom means “perdre contact”?',
+    prompt: 'Which idiom means losing contact with someone?',
     options: ['fall out of touch', 'set a good example', 'stand up to a bully', 'take turns speaking'],
     correctIndex: 0
   },
@@ -15331,7 +15221,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-177',
     type: 'choice',
-    prompt: 'Which expression means “partager des centres d’intérêt”?',
+    prompt: 'Which expression means liking the same activities or topics?',
     options: ['share interests', 'share secrets', 'share rumors', 'share problems only'],
     correctIndex: 0
   },
@@ -15349,7 +15239,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-179',
     type: 'choice',
-    prompt: 'Which expression means “avoir des parcours similaires”?',
+    prompt: 'Which expression means having similar backgrounds?',
     options: ['have similar backgrounds', 'have trust issues', 'have a crush', 'have a disagreement'],
     correctIndex: 0
   },
@@ -15368,7 +15258,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-181',
     type: 'choice',
-    prompt: 'Which idiom means “être en bons termes”?',
+    prompt: 'Which idiom means having a good relationship with someone?',
     options: ['be on good terms', 'be left out', 'be shy around strangers', 'be a bully'],
     correctIndex: 0
   },
@@ -15386,7 +15276,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-183',
     type: 'choice',
-    prompt: 'Which idiom means “faire la paix avec quelqu’un”?',
+    prompt: 'Which idiom means making peace with someone?',
     options: ['make peace with someone', 'make fun of someone', 'make rumors about someone', 'make distance with someone'],
     correctIndex: 0
   },
@@ -15404,7 +15294,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-185',
     type: 'choice',
-    prompt: 'Which idiom means “laisser le passé derrière soi”?',
+    prompt: 'Which idiom means letting go of the past?',
     options: ['let go of the past', 'fall out of touch', 'set a good example', 'break into a conversation'],
     correctIndex: 0
   },
@@ -15422,7 +15312,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-187',
     type: 'choice',
-    prompt: 'Which expression means “s’excuser sincèrement”?',
+    prompt: 'Which expression means apologizing in a sincere way?',
     options: ['apologize sincerely', 'apologize quickly', 'hold a grudge', 'take offense'],
     correctIndex: 0
   },
@@ -15440,7 +15330,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-189',
     type: 'choice',
-    prompt: 'Which expression means “réparer une relation”?',
+    prompt: 'Which expression means fixing a damaged relationship?',
     options: ['heal a relationship', 'break a relationship', 'ignore a relationship', 'block a relationship'],
     correctIndex: 0
   },
@@ -15459,7 +15349,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-191',
     type: 'choice',
-    prompt: 'Which expression means “être à l’aise avec les gens”?',
+    prompt: 'Which expression means being comfortable around people?',
     options: ['be good with people', 'be shy around strangers', 'feel left out', 'hold a grudge'],
     correctIndex: 0
   },
@@ -15477,7 +15367,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-193',
     type: 'choice',
-    prompt: 'Which phrasal verb means “entrer dans une conversation”?',
+    prompt: 'Which phrasal verb means joining a conversation?',
     options: ['break into a conversation', 'break up with someone', 'break the ice', 'break someone’s heart'],
     correctIndex: 0
   },
@@ -15495,7 +15385,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-195',
     type: 'choice',
-    prompt: 'Which expression also means “changer de sujet”?',
+    prompt: 'Which expression also means switching to a different topic?',
     options: ['change the topic', 'hold a grudge', 'set a good example', 'take turns speaking'],
     correctIndex: 0
   },
@@ -15513,7 +15403,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-197',
     type: 'choice',
-    prompt: 'Which verb means “faire l’éloge de quelqu’un”?',
+    prompt: 'Which verb means speaking very positively about someone?',
     options: ['praise someone', 'bully someone', 'exclude someone', 'block someone'],
     correctIndex: 0
   },
@@ -15531,7 +15421,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: REL_CATEGORY_ID,
     wordId: 'rel-199',
     type: 'choice',
-    prompt: 'Which verb means “encourager quelqu’un”?',
+    prompt: 'Which verb means giving someone support and motivation?',
     options: ['encourage someone', 'judge someone', 'ghost someone', 'exclude someone'],
     correctIndex: 0
   },
@@ -15565,15 +15455,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['dish', 'meal', 'cutlery', 'napkin'],
     correctIndex: 0
   },
-  {
-    id: 'food-q3',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-3',
-    type: 'choice',
-    prompt: 'Which word means “ingrédients” in English?',
-    options: ['ingredients', 'seasoning', 'herbs', 'spices'],
-    correctIndex: 0
-  },
+
   {
     id: 'food-q4',
     categoryId: FOOD_CATEGORY_ID,
@@ -15588,7 +15470,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-5',
     type: 'choice',
-    prompt: 'Which expression means “faire l’épicerie”?',
+    prompt: 'What do you call going to the store to buy food?',
     options: ['grocery shopping', 'takeout', 'eating out', 'food poisoning'],
     correctIndex: 0
   },
@@ -15606,7 +15488,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-7',
     type: 'choice',
-    prompt: 'Which word means “restes” after a meal?',
+    prompt: 'What do you call the food that remains after a meal?',
     options: ['leftovers', 'ingredients', 'seasoning', 'kitchenware'],
     correctIndex: 0
   },
@@ -15643,7 +15525,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-11',
     type: 'choice',
-    prompt: 'Which expression means “plat principal”?',
+    prompt: 'In a restaurant, which expression refers to the main dish?',
     options: ['main course', 'side dish', 'appetizer', 'dessert'],
     correctIndex: 0
   },
@@ -15679,7 +15561,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-15',
     type: 'choice',
-    prompt: 'Which drink is “eau pétillante”?',
+    prompt: 'Which drink has bubbles in it?',
     options: ['sparkling water', 'still water', 'juice', 'soda'],
     correctIndex: 0
   },
@@ -15697,7 +15579,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-17',
     type: 'choice',
-    prompt: 'Which word means “assaisonnement”?',
+    prompt: 'What do you call the mix of spices you add to food for flavor?',
     options: ['seasoning', 'ingredient', 'sauce', 'side dish'],
     correctIndex: 0
   },
@@ -15734,7 +15616,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-21',
     type: 'choice',
-    prompt: 'Which verb means “hacher / couper”?',
+    prompt: 'What do you call the action of cutting food into small pieces?',
     options: ['chop', 'bake', 'boil', 'whisk'],
     correctIndex: 0
   },
@@ -15752,7 +15634,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-23',
     type: 'choice',
-    prompt: 'Which verb means “trancher” bread?',
+    prompt: 'What verb means cutting bread into slices?',
     options: ['slice', 'whisk', 'stir', 'steam'],
     correctIndex: 0
   },
@@ -15770,7 +15652,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-25',
     type: 'choice',
-    prompt: 'Which verb means “cuire au four”?',
+    prompt: 'Which verb means cooking food in an oven?',
     options: ['bake', 'fry', 'boil', 'stir-fry'],
     correctIndex: 0
   },
@@ -15788,7 +15670,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-27',
     type: 'choice',
-    prompt: 'Which verb means “frire” food in oil?',
+    prompt: 'Which verb means cooking food in hot oil?',
     options: ['fry', 'steam', 'whisk', 'slice'],
     correctIndex: 0
   },
@@ -15806,7 +15688,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-29',
     type: 'choice',
-    prompt: 'Which verb means “remuer” soup or sauce?',
+    prompt: 'Which verb means moving soup or sauce around with a spoon?',
     options: ['stir', 'freeze', 'slice', 'burn'],
     correctIndex: 0
   },
@@ -15825,7 +15707,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-31',
     type: 'choice',
-    prompt: 'Which verb means “fouetter” eggs?',
+    prompt: 'Which verb means beating eggs quickly with a whisk or fork?',
     options: ['whisk', 'bake', 'boil', 'fry'],
     correctIndex: 0
   },
@@ -15843,7 +15725,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-33',
     type: 'choice',
-    prompt: 'Which expression means “test de goût”?',
+    prompt: 'What do you call a small event where people try food and give their opinion?',
     options: ['taste test', 'taste break', 'taste menu', 'taste limit'],
     correctIndex: 0
   },
@@ -15861,7 +15743,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-35',
     type: 'choice',
-    prompt: 'Which word means “pas mûr”?',
+    prompt: 'Which word describes fruit that is not ready to eat yet?',
     options: ['unripe', 'ripe', 'stale', 'overcooked'],
     correctIndex: 0
   },
@@ -15879,7 +15761,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-37',
     type: 'drag',
-    prompt: 'Bread that is “rassis” is called ____ in English.',
+    prompt: 'Bread that is no longer fresh is called ____ bread.',
     options: ['stale', 'fresh', 'juicy', 'creamy'],
     correctIndex: 0
   },
@@ -15897,7 +15779,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-39',
     type: 'choice',
-    prompt: 'Which word describes “salé” foods?',
+    prompt: 'Which word describes salty or non-sweet foods?',
     options: ['savory', 'sweet', 'bitter', 'bland'],
     correctIndex: 0
   },
@@ -15912,15 +15794,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
 
   {
-    id: 'food-q41',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-41',
-    type: 'choice',
-    prompt: 'Which word means “fade / sans goût”?',
-    options: ['bland', 'spicy', 'sweet', 'crunchy'],
-    correctIndex: 0
-  },
-  {
     id: 'food-q42',
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-42',
@@ -15934,7 +15807,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-43',
     type: 'choice',
-    prompt: 'Which word means “acide” like a lemon?',
+    prompt: 'Which word describes a sharp taste like a lemon?',
     options: ['sour', 'sweet', 'creamy', 'stale'],
     correctIndex: 0
   },
@@ -15952,7 +15825,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-45',
     type: 'choice',
-    prompt: 'Which word means “crémeux”?',
+    prompt: 'Which word describes food with a smooth, rich texture?',
     options: ['creamy', 'crunchy', 'juicy', 'burnt'],
     correctIndex: 0
   },
@@ -15988,7 +15861,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-49',
     type: 'drag',
-    prompt: 'If something is “trop cuit”, it is ____.',
+    prompt: 'If something is cooked for too long, it is ____.',
     options: ['overcooked', 'undercooked', 'raw', 'fresh'],
     correctIndex: 0
   },
@@ -16007,7 +15880,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-51',
     type: 'choice',
-    prompt: 'Which word means “ustensiles de cuisine” in general?',
+    prompt: 'Which word refers to kitchen tools in general?',
     options: ['kitchenware', 'cutlery', 'leftovers', 'beverages'],
     correctIndex: 0
   },
@@ -16025,7 +15898,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-53',
     type: 'choice',
-    prompt: 'Which item is a “casserole” in English?',
+    prompt: 'Which item is used for cooking soups or stews?',
     options: ['pot', 'plate', 'fork', 'knife'],
     correctIndex: 0
   },
@@ -16043,7 +15916,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-55',
     type: 'choice',
-    prompt: 'Which utensil is a “fourchette”?',
+    prompt: 'Which utensil do you use to stab food and lift it to your mouth?',
     options: ['fork', 'spoon', 'knife', 'cup'],
     correctIndex: 0
   },
@@ -16061,7 +15934,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-57',
     type: 'choice',
-    prompt: 'Which utensil is a “couteau”?',
+    prompt: 'Which utensil do you use to cut food?',
     options: ['knife', 'fork', 'spoon', 'plate'],
     correctIndex: 0
   },
@@ -16098,7 +15971,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-61',
     type: 'choice',
-    prompt: 'Which item is a “boîte pour emporter”?',
+    prompt: 'Which item is a box used for taking food home from a restaurant?',
     options: ['to-go box', 'shopping cart', 'bowl', 'plate'],
     correctIndex: 0
   },
@@ -16170,7 +16043,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-69',
     type: 'choice',
-    prompt: 'Which verb means “commander” food?',
+    prompt: 'Which verb means asking for food or drinks in a restaurant?',
     options: ['order', 'stir', 'whisk', 'spoil'],
     correctIndex: 0
   },
@@ -16189,7 +16062,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-71',
     type: 'choice',
-    prompt: 'Which phrasal verb means “manger au restaurant”?',
+    prompt: 'Which phrasal verb means eating at a restaurant instead of at home?',
     options: ['eat out', 'take out', 'go bad', 'pig out'],
     correctIndex: 0
   },
@@ -16207,7 +16080,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-73',
     type: 'choice',
-    prompt: 'Which phrasal verb means “engloutir (manger très vite)”?',
+    prompt: 'Which phrasal verb means eating food very quickly?',
     options: ['wolf down', 'pick at', 'go bad', 'eat out'],
     correctIndex: 0
   },
@@ -16225,7 +16098,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-75',
     type: 'choice',
-    prompt: 'Which phrasal verb means “se goinfrer”?',
+    prompt: 'Which phrasal verb means eating a lot of food, more than you need?',
     options: ['pig out', 'eat out', 'go bad', 'go shopping'],
     correctIndex: 0
   },
@@ -16243,7 +16116,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-77',
     type: 'choice',
-    prompt: 'Which word means “affamé”?',
+    prompt: 'Which word means extremely hungry?',
     options: ['starving', 'stuffed', 'juicy', 'fresh'],
     correctIndex: 0
   },
@@ -16280,7 +16153,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-81',
     type: 'choice',
-    prompt: 'Which expression means “réaction allergique”?',
+    prompt: 'Which expression means a bad physical reaction to something you eat or drink?',
     options: ['allergic reaction', 'food poisoning', 'balanced diet', 'craving'],
     correctIndex: 0
   },
@@ -16298,7 +16171,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-83',
     type: 'choice',
-    prompt: 'Which label means “sans produits laitiers”?',
+    prompt: 'Which label means that a product does not contain dairy products?',
     options: ['dairy-free', 'gluten-free', 'organic', 'vegan'],
     correctIndex: 0
   },
@@ -16316,7 +16189,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-85',
     type: 'choice',
-    prompt: 'Which word means “végétarien”?',
+    prompt: 'Which word describes a person who does not eat meat?',
     options: ['vegetarian', 'vegan', 'organic', 'processed'],
     correctIndex: 0
   },
@@ -16334,7 +16207,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-87',
     type: 'choice',
-    prompt: 'Which term means “aliment transformé”?',
+    prompt: 'Which term describes food made in a factory with many added ingredients?',
     options: ['processed food', 'whole foods', 'homemade food', 'fresh food'],
     correctIndex: 0
   },
@@ -16352,7 +16225,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-89',
     type: 'choice',
-    prompt: 'Which expression means “alimentation équilibrée”?',
+    prompt: 'Which expression means a way of eating with the right amount of different foods?',
     options: ['balanced diet', 'gluten-free diet', 'frozen food', 'takeout meal'],
     correctIndex: 0
   },
@@ -16371,7 +16244,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-91',
     type: 'choice',
-    prompt: 'Which term means “rayon alimentaire” in a store?',
+    prompt: 'In a store, which term refers to a section where food items are displayed?',
     options: ['food shelf', 'bulk section', 'checkout counter', 'kitchenware'],
     correctIndex: 0
   },
@@ -16402,15 +16275,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['bulk', 'frozen', 'dessert', 'balanced'],
     correctIndex: 0
   },
-  {
-    id: 'food-q95',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-95',
-    type: 'choice',
-    prompt: 'Which item is a “panier / chariot” in a supermarket?',
-    options: ['shopping cart', 'to-go box', 'coffee cup', 'plate'],
-    correctIndex: 0
-  },
+
   {
     id: 'food-q96',
     categoryId: FOOD_CATEGORY_ID,
@@ -16425,7 +16290,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-97',
     type: 'choice',
-    prompt: 'Which expression means “date d’expiration”?',
+    prompt: 'Which expression means the last date when food is safe to eat?',
     options: ['expiration date', 'reservation time', 'portion size', 'balanced date'],
     correctIndex: 0
   },
@@ -16443,7 +16308,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-99',
     type: 'choice',
-    prompt: 'Which idiom means “mourir de faim”?',
+    prompt: 'Which idiom means being extremely hungry?',
     options: ['be starving', 'be stuffed', 'spill the beans', 'pig out'],
     correctIndex: 0
   },
@@ -16461,7 +16326,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-101',
     type: 'choice',
-    prompt: 'What is the English word for “petit-déjeuner”?',
+    prompt: 'What do you call the first meal of the day, usually eaten in the morning?',
     options: ['breakfast', 'brunch', 'lunch', 'dinner'],
     correctIndex: 0
   },
@@ -16474,15 +16339,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['brunch', 'breakfast', 'snack', 'dinner'],
     correctIndex: 0
   },
-  {
-    id: 'food-q103',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-103',
-    type: 'choice',
-    prompt: 'In English, “déjeuner (midi)” is usually called what?',
-    options: ['lunch', 'dinner', 'breakfast', 'snack'],
-    correctIndex: 0
-  },
+  
   {
     id: 'food-q104',
     categoryId: FOOD_CATEGORY_ID,
@@ -16492,15 +16349,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['dinner', 'breakfast', 'lunch', 'brunch'],
     correctIndex: 0
   },
-  {
-    id: 'food-q105',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-105',
-    type: 'choice',
-    prompt: 'Which word means “collation / snack”?',
-    options: ['snack', 'brunch', 'meal', 'dessert'],
-    correctIndex: 0
-  },
+  
   {
     id: 'food-q106',
     categoryId: FOOD_CATEGORY_ID,
@@ -16510,15 +16359,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['fast food', 'street food', 'junk food', 'frozen food'],
     correctIndex: 0
   },
-  {
-    id: 'food-q107',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-107',
-    type: 'choice',
-    prompt: 'Food sold from small stands on the street is called what in English?',
-    options: ['street food', 'junk food', 'comfort food', 'fine dining'],
-    correctIndex: 0
-  },
+  
   {
     id: 'food-q108',
     categoryId: FOOD_CATEGORY_ID,
@@ -16533,7 +16374,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-109',
     type: 'choice',
-    prompt: 'Which expression means “repas fait maison”?',
+    prompt: 'Which expression describes a meal prepared at home?',
     options: ['home-cooked meal', 'ready-made meal', 'frozen food', 'fast food'],
     correctIndex: 0
   },
@@ -16547,12 +16388,12 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
 
-  {
+   {
     id: 'food-q111',
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-111',
     type: 'choice',
-    prompt: 'Which expression means “nourriture saine”?',
+    prompt: 'Which expression describes food that is good for your health?',
     options: ['healthy food', 'junk food', 'comfort food', 'street food'],
     correctIndex: 0
   },
@@ -16588,7 +16429,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-115',
     type: 'choice',
-    prompt: 'Which expression means “nourriture grasse”?',
+    prompt: 'Which expression describes food that contains a lot of fat?',
     options: ['fatty food', 'healthy food', 'whole grains', 'low-fat food'],
     correctIndex: 0
   },
@@ -16620,12 +16461,12 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'food-q119',
+    id: 'food-q117',
     categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-119',
+    wordId: 'food-117',
     type: 'choice',
-    prompt: 'Which label means “sans sucre”?',
-    options: ['sugar-free', 'low-fat', 'high in fiber', 'organic'],
+    prompt: 'Which expression describes a snack that tastes salty?',
+    options: ['salty snack', 'sweet snack', 'healthy snack', 'junk snack'],
     correctIndex: 0
   },
   {
@@ -16643,7 +16484,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-121',
     type: 'choice',
-    prompt: 'Which verb means “éplucher”?',
+    prompt: 'Which verb means removing the skin of a fruit or vegetable?',
     options: ['peel', 'grate', 'mash', 'knead'],
     correctIndex: 0
   },
@@ -16661,7 +16502,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-123',
     type: 'choice',
-    prompt: 'Which verb means “écraser” potatoes?',
+    prompt: 'Which verb means crushing potatoes until they are soft and smooth?',
     options: ['mash', 'slice', 'chop', 'roast'],
     correctIndex: 0
   },
@@ -16679,7 +16520,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-125',
     type: 'choice',
-    prompt: 'Which verb means “laisser mijoter” a sauce?',
+    prompt: 'Which verb means cooking a sauce slowly over low heat?',
     options: ['simmer', 'fry', 'bake', 'grill'],
     correctIndex: 0
   },
@@ -16697,7 +16538,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-127',
     type: 'choice',
-    prompt: 'Which cooking method means “cuire au gril (four)”?',
+    prompt: 'Which cooking method means cooking food close to the top heat in an oven?',
     options: ['broil', 'boil', 'steam', 'mash'],
     correctIndex: 0
   },
@@ -16715,7 +16556,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-129',
     type: 'choice',
-    prompt: 'Which verb means “saupoudrer”?',
+    prompt: 'Which verb means lightly scattering something like salt or sugar over food?',
     options: ['sprinkle', 'boil', 'knead', 'roast'],
     correctIndex: 0
   },
@@ -16734,7 +16575,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-131',
     type: 'choice',
-    prompt: 'Which verb means “mélanger”?',
+    prompt: 'Which verb means combining ingredients together?',
     options: ['mix', 'peel', 'roast', 'knead'],
     correctIndex: 0
   },
@@ -16752,7 +16593,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-133',
     type: 'choice',
-    prompt: 'Which verb means “verser”?',
+    prompt: 'Which verb means letting a liquid flow from one container to another?',
     options: ['pour', 'mash', 'whip', 'stir'],
     correctIndex: 0
   },
@@ -16766,15 +16607,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'food-q135',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-135',
-    type: 'choice',
-    prompt: 'Which expression means “avoir envie de quelque chose de sucré”?',
-    options: ['craving something sweet', 'eat clean', 'skip a meal', 'be full'],
-    correctIndex: 0
-  },
-  {
     id: 'food-q136',
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-136',
@@ -16783,12 +16615,12 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['skip', 'spread', 'drizzle', 'boil'],
     correctIndex: 0
   },
-  {
+ {
     id: 'food-q137',
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-137',
     type: 'choice',
-    prompt: 'Which phrasal verb means “manger sainement”?',
+    prompt: 'Which phrasal verb means eating in a very healthy way?',
     options: ['eat clean', 'pig out', 'wolf down', 'eat like a horse'],
     correctIndex: 0
   },
@@ -16806,7 +16638,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-139',
     type: 'choice',
-    prompt: 'Which phrasal verb means “éliminer (de son alimentation)”?',
+    prompt: 'Which phrasal verb means removing something completely from your diet?',
     options: ['cut out', 'cut back on', 'snack on', 'eat up'],
     correctIndex: 0
   },
@@ -16825,7 +16657,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-141',
     type: 'choice',
-    prompt: 'Which expression means “envies alimentaires”?',
+    prompt: 'Which expression means strong desires for certain foods?',
     options: ['food cravings', 'food waste', 'meal plan', 'ready-made meals'],
     correctIndex: 0
   },
@@ -16843,7 +16675,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-143',
     type: 'choice',
-    prompt: 'Which expression means “manger pour se réconforter”?',
+    prompt: 'Which expression means eating to feel better emotionally?',
     options: ['comfort eating', 'eat clean', 'meal prep', 'fine dining'],
     correctIndex: 0
   },
@@ -16861,7 +16693,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-145',
     type: 'choice',
-    prompt: 'Which phrasal verb means “manger à la maison”?',
+    prompt: 'Which phrasal verb means eating at home instead of going to a restaurant?',
     options: ['eat in', 'eat out', 'order in', 'go for seconds'],
     correctIndex: 0
   },
@@ -16879,7 +16711,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-147',
     type: 'choice',
-    prompt: 'Which expression means “livraison de nourriture”?',
+    prompt: 'Which expression means having food brought to your home?',
     options: ['food delivery', 'meal prep', 'ready-made meal', 'frozen food'],
     correctIndex: 0
   },
@@ -16897,7 +16729,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-149',
     type: 'choice',
-    prompt: 'Which expression means “plat préparé”?',
+    prompt: 'Which expression describes a meal that is already prepared and just needs heating?',
     options: ['ready-made meal', 'home-cooked meal', 'comfort food', 'street food'],
     correctIndex: 0
   },
@@ -16916,7 +16748,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-151',
     type: 'choice',
-    prompt: 'Which expression means “gaspillage alimentaire”?',
+    prompt: 'Which expression means food that is thrown away instead of eaten?',
     options: ['food waste', 'food cravings', 'food delivery', 'meal prep'],
     correctIndex: 0
   },
@@ -16934,7 +16766,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-153',
     type: 'choice',
-    prompt: 'Which expression means “plan de repas”?',
+    prompt: 'Which expression means a schedule of what you will eat over several days?',
     options: ['meal plan', 'food budget', 'meal prep', 'buffet'],
     correctIndex: 0
   },
@@ -16952,7 +16784,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-155',
     type: 'choice',
-    prompt: 'Which verb means “assurer le service traiteur”?',
+    prompt: 'Which verb means providing food for an event?',
     options: ['cater', 'cook', 'serve', 'deliver'],
     correctIndex: 0
   },
@@ -16970,7 +16802,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-157',
     type: 'choice',
-    prompt: 'The hotel offers a breakfast what?',
+    prompt: 'At the hotel, breakfast is served as a what?',
     options: ['buffet', 'cart', 'crate', 'shelf'],
     correctIndex: 0
   },
@@ -16988,7 +16820,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-159',
     type: 'choice',
-    prompt: 'Which expression means “service à partager (familial)”?',
+    prompt: 'Which expression describes dishes placed on the table for everyone to share?',
     options: ['family-style', 'buffet', 'fine dining', 'fast food'],
     correctIndex: 0
   },
@@ -17007,7 +16839,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-161',
     type: 'choice',
-    prompt: 'Which expression means “être difficile avec la nourriture”?',
+    prompt: 'Which expression means being very selective about what you eat?',
     options: ['be picky about food', 'eat like a bird', 'eat clean', 'be full'],
     correctIndex: 0
   },
@@ -17025,7 +16857,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-163',
     type: 'choice',
-    prompt: 'A person who loves food and trying new dishes is a what?',
+    prompt: 'A person who loves food and trying new dishes is called what?',
     options: ['foodie', 'picky eater', 'chef', 'waiter'],
     correctIndex: 0
   },
@@ -17043,7 +16875,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-165',
     type: 'choice',
-    prompt: 'Which expression means “être rassasié”?',
+    prompt: 'Which expression means that you have eaten enough and cannot eat more?',
     options: ['be full', 'be starving', 'go for seconds', 'snack on'],
     correctIndex: 0
   },
@@ -17061,7 +16893,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-167',
     type: 'choice',
-    prompt: 'Which idiom means “lécher son assiette”?',
+    prompt: 'Which idiom means eating everything on your plate?',
     options: ['lick your plate clean', 'eat like a bird', 'piece of cake', 'have a sweet tooth'],
     correctIndex: 0
   },
@@ -17079,7 +16911,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-169',
     type: 'choice',
-    prompt: 'Which idiom means “manger comme un ogre”?',
+    prompt: 'Which idiom means eating a lot of food?',
     options: ['eat like a horse', 'eat like a bird', 'bread and butter', 'big cheese'],
     correctIndex: 0
   },
@@ -17098,7 +16930,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-171',
     type: 'choice',
-    prompt: 'Which phrasal verb means “couper en morceaux”?',
+    prompt: 'Which phrasal verb means cutting food into pieces?',
     options: ['chop up', 'heat up', 'cool down', 'eat up'],
     correctIndex: 0
   },
@@ -17116,10 +16948,10 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-173',
     type: 'choice',
-    prompt: 'Which phrasal verb means “refroidir”?',
+    prompt: 'Which phrasal verb means letting something become less hot?',
     options: ['cool down', 'heat up', 'boil over', 'eat up'],
     correctIndex: 0
-  },
+  },,
   {
     id: 'food-q174',
     categoryId: FOOD_CATEGORY_ID,
@@ -17134,7 +16966,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-175',
     type: 'choice',
-    prompt: 'Which phrasal verb means “tout manger”?',
+    prompt: 'Which phrasal verb means finishing all the food on your plate?',
     options: ['eat up', 'eat out', 'go off', 'snack on'],
     correctIndex: 0
   },
@@ -17152,7 +16984,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-177',
     type: 'choice',
-    prompt: 'Which phrasal verb means “préparer rapidement” a dish?',
+    prompt: 'Which phrasal verb means preparing a dish quickly?',
     options: ['whip up', 'boil over', 'cut out', 'live on'],
     correctIndex: 0
   },
@@ -17170,7 +17002,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-179',
     type: 'choice',
-    prompt: 'Which phrasal verb means “se nourrir principalement de”?',
+    prompt: 'Which phrasal verb means mainly surviving on one type of food?',
     options: ['live on', 'eat out', 'snack on', 'cut back on'],
     correctIndex: 0
   },
@@ -17189,7 +17021,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-181',
     type: 'choice',
-    prompt: 'Which idiom means “trop de cuisiniers gâtent la sauce”?',
+    prompt: 'Which idiom means that having too many people working on something can ruin it?',
     options: [
       'too many cooks spoil the broth',
       'piece of cake',
@@ -17212,7 +17044,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-183',
     type: 'choice',
-    prompt: 'Which idiom matches “vouloir le beurre et l’argent du beurre”?',
+    prompt: 'Which idiom means wanting to keep everything and still get more?',
     options: [
       'have your cake and eat it too',
       'bring home the bacon',
@@ -17235,7 +17067,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-185',
     type: 'choice',
-    prompt: 'Which idiom means “se vendre comme des petits pains”?',
+    prompt: 'Which idiom means selling very quickly and in large amounts?',
     options: ['sell like hotcakes', 'bring home the bacon', 'big cheese', 'bread and butter'],
     correctIndex: 0
   },
@@ -17253,7 +17085,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-187',
     type: 'choice',
-    prompt: 'Which idiom means “gagne-pain”?',
+    prompt: 'Which idiom means the main way someone earns money?',
     options: ['bread and butter', 'piece of cake', 'big cheese', 'sell like hotcakes'],
     correctIndex: 0
   },
@@ -17266,20 +17098,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['bacon', 'cake', 'cheese', 'bread'],
     correctIndex: 0
   },
-  {
-    id: 'food-q189',
-    categoryId: FOOD_CATEGORY_ID,
-    wordId: 'food-189',
-    type: 'choice',
-    prompt: 'Which idiom means “mettre en veilleuse / en arrière-plan”?',
-    options: [
-      'on the back burner',
-      'have your cake and eat it too',
-      'spill the beans',
-      'piece of cake'
-    ],
-    correctIndex: 0
-  },
+  
   {
     id: 'food-q190',
     categoryId: FOOD_CATEGORY_ID,
@@ -17295,7 +17114,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-191',
     type: 'choice',
-    prompt: 'Which item is a “salière”?',
+    prompt: 'Which item do you use to shake salt onto your food?',
     options: ['salt shaker', 'pepper grinder', 'condiment', 'spread'],
     correctIndex: 0
   },
@@ -17331,7 +17150,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-195',
     type: 'choice',
-    prompt: 'Which word means “pâtisserie”?',
+    prompt: 'Which word means a sweet baked item like a croissant or tart?',
     options: ['pastry', 'batter', 'broth', 'dough'],
     correctIndex: 0
   },
@@ -17349,7 +17168,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-197',
     type: 'choice',
-    prompt: 'Which word means “pâte (à pain, pizza)”?',
+    prompt: 'Which word means a thick mixture of flour and liquid used to make bread or pizza?',
     options: ['dough', 'batter', 'broth', 'spread'],
     correctIndex: 0
   },
@@ -17367,10 +17186,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: FOOD_CATEGORY_ID,
     wordId: 'food-199',
     type: 'choice',
-    prompt: 'Which word means “bouillon”?',
+    prompt: 'Which word means a thin liquid made by boiling meat or vegetables, used in soups?',
     options: ['broth', 'batter', 'dough', 'spread'],
     correctIndex: 0
-  },
+  }
+  ,
   {
     id: 'food-q200',
     categoryId: FOOD_CATEGORY_ID,
@@ -17388,7 +17208,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-1',
     type: 'choice',
-    prompt: 'What is the English word for “salle de classe”?',
+    prompt: 'What do you call the room where students have their lessons?',
     options: ['classroom', 'campus', 'office', 'library'],
     correctIndex: 0
   },
@@ -17401,15 +17221,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['teacher', 'student', 'principal', 'tutor'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q3',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-3',
-    type: 'choice',
-    prompt: 'Which word means “étudiant / élève”?',
-    options: ['student', 'teacher', 'classmate', 'counselor'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q4',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -17424,7 +17236,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-5',
     type: 'choice',
-    prompt: 'Which word means “devoirs”?',
+    prompt: 'Which word means school work that students do at home?',
     options: ['homework', 'exam', 'quiz', 'lecture'],
     correctIndex: 0
   },
@@ -17442,7 +17254,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-7',
     type: 'choice',
-    prompt: 'Which expression means “date limite”?',
+    prompt: 'Which expression means the last day something can be handed in?',
     options: ['due date', 'exam date', 'start date', 'holiday'],
     correctIndex: 0
   },
@@ -17460,7 +17272,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-9',
     type: 'choice',
-    prompt: 'What is the English word for “note” (résultat scolaire)?',
+    prompt: 'What is the English word for a score or mark on a test?',
     options: ['grade', 'class', 'course', 'page'],
     correctIndex: 0
   },
@@ -17479,7 +17291,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-11',
     type: 'choice',
-    prompt: 'Which expression means “échouer à un examen”?',
+    prompt: 'Which expression means getting a bad result on a test so you do not pass?',
     options: ['fail a test', 'pass a test', 'take attendance', 'drop a class'],
     correctIndex: 0
   },
@@ -17492,15 +17304,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['dropped', 'signed', 'passed', 'memorized'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q13',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-13',
-    type: 'choice',
-    prompt: 'Which verb means “reprendre / repasser (un examen)”?',
-    options: ['retake', 'rewrite', 'review', 'drop'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q14',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -17515,7 +17319,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-15',
     type: 'choice',
-    prompt: 'Which verb means “réviser”?',
+    prompt: 'Which verb means to go over something again to prepare for a test?',
     options: ['review', 'graduate', 'drop out', 'sign up'],
     correctIndex: 0
   },
@@ -17533,7 +17337,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-17',
     type: 'choice',
-    prompt: 'Which expression means “prendre des notes”?',
+    prompt: 'Which expression means writing down important information during a lesson?',
     options: ['take notes', 'pay attention', 'drop a class', 'hand in'],
     correctIndex: 0
   },
@@ -17546,15 +17350,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['study', 'sports', 'music', 'family'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q19',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-19',
-    type: 'choice',
-    prompt: 'Which word means “quiz / petit test”?',
-    options: ['quiz', 'lecture', 'campus', 'degree'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q20',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -17570,7 +17366,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-21',
     type: 'choice',
-    prompt: 'Which expression means “quiz surprise”?',
+    prompt: 'Which expression means a short, surprise test?',
     options: ['pop quiz', 'final exam', 'midterms', 'group project'],
     correctIndex: 0
   },
@@ -17588,7 +17384,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-23',
     type: 'choice',
-    prompt: 'Which word means “examens de mi-session”?',
+    prompt: 'Which word means exams given in the middle of a course?',
     options: ['midterms', 'finals', 'pop quiz', 'syllabus'],
     correctIndex: 0
   },
@@ -17606,7 +17402,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-25',
     type: 'choice',
-    prompt: 'Which word means “plan de cours”?',
+    prompt: 'Which word means a document that describes the content and rules of a course?',
     options: ['syllabus', 'assignment', 'lecture', 'degree'],
     correctIndex: 0
   },
@@ -17624,7 +17420,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-27',
     type: 'choice',
-    prompt: 'Which word means “laboratoire”?',
+    prompt: 'Which word means a special room where experiments are done?',
     options: ['lab', 'campus', 'dorm', 'cafeteria'],
     correctIndex: 0
   },
@@ -17642,7 +17438,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-29',
     type: 'choice',
-    prompt: 'Which word means “bourse d’études”?',
+    prompt: 'Which word means money given to a student to help pay for studies?',
     options: ['scholarship', 'tuition fees', 'degree', 'loan'],
     correctIndex: 0
   },
@@ -17661,7 +17457,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-31',
     type: 'choice',
-    prompt: 'Which expression means “fournitures scolaires”?',
+    prompt: 'Which expression means things like pens, notebooks, and rulers used for school?',
     options: ['school supplies', 'school bus', 'school uniform', 'school trip'],
     correctIndex: 0
   },
@@ -17679,7 +17475,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-33',
     type: 'choice',
-    prompt: 'Which word means “cahier”?',
+    prompt: 'Which word means a small book with blank pages for writing notes?',
     options: ['notebook', 'textbook', 'binder', 'whiteboard'],
     correctIndex: 0
   },
@@ -17697,7 +17493,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-35',
     type: 'choice',
-    prompt: 'Which word means “classeur”?',
+    prompt: 'Which word means a folder with rings used to hold loose papers?',
     options: ['binder', 'backpack', 'notebook', 'shelf'],
     correctIndex: 0
   },
@@ -17715,7 +17511,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-37',
     type: 'choice',
-    prompt: 'Which word means “tableau blanc”?',
+    prompt: 'Which word means a board you can write on with special markers?',
     options: ['whiteboard', 'blackboard', 'screen', 'wall'],
     correctIndex: 0
   },
@@ -17733,7 +17529,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-39',
     type: 'choice',
-    prompt: 'Which word means “absent”?',
+    prompt: 'Which word describes a student who is not in class?',
     options: ['absent', 'present', 'late', 'early'],
     correctIndex: 0
   },
@@ -17752,7 +17548,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-41',
     type: 'choice',
-    prompt: 'Which expression means “lever la main”?',
+    prompt: 'Which expression means lifting your arm to show you want to speak?',
     options: ['raise your hand', 'take attendance', 'drop a class', 'hit the books'],
     correctIndex: 0
   },
@@ -17770,7 +17566,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-43',
     type: 'choice',
-    prompt: 'Which expression means “faire l’appel”?',
+    prompt: 'Which expression means checking which students are present in class?',
     options: ['take attendance', 'pay attention', 'hand in', 'drop out'],
     correctIndex: 0
   },
@@ -17788,7 +17584,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-45',
     type: 'choice',
-    prompt: 'Which phrasal verb means “rattraper (le retard)”?',
+    prompt: 'Which phrasal verb means to reach the same level after being behind?',
     options: ['catch up', 'drop out', 'hand in', 'look over'],
     correctIndex: 0
   },
@@ -17801,15 +17597,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['hand', 'fall', 'drop', 'cheat'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q47',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-47',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “relire / vérifier”?',
-    options: ['look over', 'sign up for', 'drop out', 'run late'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q48',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -17824,7 +17612,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-49',
     type: 'choice',
-    prompt: 'Which phrasal verb means “s’inscrire à”?',
+    prompt: 'Which phrasal verb means to register for a class or activity?',
     options: ['sign up for', 'drop out of', 'catch up on', 'look over'],
     correctIndex: 0
   },
@@ -17843,7 +17631,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-51',
     type: 'choice',
-    prompt: 'Which expression means “tricher à un examen”?',
+    prompt: 'Which expression means using dishonest ways to get answers in a test?',
     options: ['cheat on a test', 'drop a class', 'hit the books', 'pay attention'],
     correctIndex: 0
   },
@@ -17861,7 +17649,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-53',
     type: 'choice',
-    prompt: 'Which word means “retenue”?',
+    prompt: 'Which word means staying after school as a punishment?',
     options: ['detention', 'recess', 'lecture', 'degree'],
     correctIndex: 0
   },
@@ -17879,7 +17667,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-55',
     type: 'choice',
-    prompt: 'Which expression means “conseiller d’orientation”?',
+    prompt: 'Which expression means a person who helps students choose studies or careers?',
     options: ['guidance counselor', 'school bus driver', 'tutor', 'principal'],
     correctIndex: 0
   },
@@ -17897,7 +17685,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-57',
     type: 'choice',
-    prompt: 'Which expression means “travail de groupe”?',
+    prompt: 'Which expression means a task that classmates must do together?',
     options: ['group project', 'group exam', 'group bus', 'group uniform'],
     correctIndex: 0
   },
@@ -17915,7 +17703,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-59',
     type: 'choice',
-    prompt: 'Which expression means “travail de recherche”?',
+    prompt: 'Which expression means a long written assignment based on academic reading?',
     options: ['research paper', 'homework sheet', 'cheat sheet', 'attendance sheet'],
     correctIndex: 0
   },
@@ -17934,7 +17722,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-61',
     type: 'choice',
-    prompt: 'Which word means “campus (universitaire)”?',
+    prompt: 'Which word means the area of land and buildings of a university?',
     options: ['campus', 'classroom', 'cafeteria', 'dorm'],
     correctIndex: 0
   },
@@ -17952,7 +17740,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-63',
     type: 'choice',
-    prompt: 'Which word means “cafétéria”?',
+    prompt: 'Which word means a place in a school or university where you can buy food?',
     options: ['cafeteria', 'library', 'campus', 'classroom'],
     correctIndex: 0
   },
@@ -17970,7 +17758,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-65',
     type: 'choice',
-    prompt: 'Which expression means “salle d’étude”?',
+    prompt: 'Which expression means a room where students sit and study quietly?',
     options: ['study hall', 'lecture hall', 'gym', 'lab'],
     correctIndex: 0
   },
@@ -17988,7 +17776,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-67',
     type: 'choice',
-    prompt: 'Which word means “diplôme”?',
+    prompt: 'Which word means an official qualification you receive after finishing a program?',
     options: ['degree', 'campus', 'dorm', 'syllabus'],
     correctIndex: 0
   },
@@ -18006,7 +17794,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-69',
     type: 'choice',
-    prompt: 'Which word means “concentration secondaire”?',
+    prompt: 'Which word means a secondary subject that you study in addition to your main subject?',
     options: ['minor', 'major', 'degree', 'diploma'],
     correctIndex: 0
   },
@@ -18017,16 +17805,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'She will ____ next year.',
     options: ['graduate', 'cheat', 'drop out', 'expel'],
-    correctIndex: 0
-  },
-
-  {
-    id: 'educ-q71',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-71',
-    type: 'choice',
-    prompt: 'Which word means “études supérieures / post-graduées”?',
-    options: ['postgraduate', 'undergraduate', 'high school', 'recess'],
     correctIndex: 0
   },
   {
@@ -18043,7 +17821,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-73',
     type: 'choice',
-    prompt: 'Which word means “stage” (en entreprise)?',
+    prompt: 'What do you call a training period in a company?',
     options: ['internship', 'recess', 'detention', 'lecture'],
     correctIndex: 0
   },
@@ -18054,20 +17832,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'A ____ helps guide your career.',
     options: ['mentor', 'principal', 'bus driver', 'janitor'],
-    correctIndex: 0
-  },
-  {
-    id: 'educ-q75',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-75',
-    type: 'choice',
-    prompt: 'Which expression means “activités parascolaires”?',
-    options: [
-      'extracurricular activities',
-      'school supplies',
-      'school bus activities',
-      'parent meetings'
-    ],
     correctIndex: 0
   },
   {
@@ -18084,7 +17848,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-77',
     type: 'choice',
-    prompt: 'Which word means “récréation”?',
+    prompt: 'What do you call a break between classes at school?',
     options: ['recess', 'research', 'lecture', 'detention'],
     correctIndex: 0
   },
@@ -18102,7 +17866,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-79',
     type: 'choice',
-    prompt: 'Which expression means “conseiller scolaire”?',
+    prompt: 'Who helps students with academic or personal guidance at school?',
     options: ['school counselor', 'principal', 'tutor', 'mentor'],
     correctIndex: 0
   },
@@ -18113,16 +17877,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'The ____-teacher meeting is on Monday.',
     options: ['parent', 'student', 'bus', 'library'],
-    correctIndex: 0
-  },
-
-  {
-    id: 'educ-q81',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-81',
-    type: 'choice',
-    prompt: 'Which expression means “arts plastiques”?',
-    options: ['arts and crafts', 'science fair', 'field trip', 'homework'],
     correctIndex: 0
   },
   {
@@ -18139,7 +17893,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-83',
     type: 'choice',
-    prompt: 'Which expression means “feuille de présence”?',
+    prompt: 'What do students sign to confirm they were present?',
     options: ['attendance sheet', 'cheat sheet', 'homework sheet', 'menu'],
     correctIndex: 0
   },
@@ -18157,7 +17911,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-85',
     type: 'choice',
-    prompt: 'Which word means “internat”?',
+    prompt: 'What do you call a school where students live on campus?',
     options: ['boarding school', 'public school', 'private school', 'high school diploma'],
     correctIndex: 0
   },
@@ -18170,15 +17924,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['private', 'recess', 'library', 'detention'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q87',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-87',
-    type: 'choice',
-    prompt: 'Which word means “école publique”?',
-    options: ['public school', 'private school', 'boarding school', 'field school'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q88',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18193,7 +17939,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-89',
     type: 'choice',
-    prompt: 'Which expression means “tableau d’honneur”?',
+    prompt: 'What do you call the list of students with outstanding grades?',
     options: ['honor roll', 'whiteboard', 'grade sheet', 'syllabus'],
     correctIndex: 0
   },
@@ -18204,16 +17950,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'He hid a ____ sheet in his sleeve.',
     options: ['cheat', 'honor', 'grade', 'exam'],
-    correctIndex: 0
-  },
-
-  {
-    id: 'educ-q91',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-91',
-    type: 'choice',
-    prompt: 'Which expression means “faire attention”?',
-    options: ['pay attention', 'take attendance', 'drop out', 'cram'],
     correctIndex: 0
   },
   {
@@ -18230,7 +17966,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-93',
     type: 'choice',
-    prompt: 'Which phrasal verb means “prendre du retard”?',
+    prompt: 'What phrasal verb means to not keep up with the expected progress?',
     options: ['fall behind', 'catch up', 'stay on track', 'hit the books'],
     correctIndex: 0
   },
@@ -18244,30 +17980,12 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
   {
-    id: 'educ-q95',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-95',
-    type: 'choice',
-    prompt: 'Which idiom means “se mettre sérieusement à étudier”?',
-    options: ['hit the books', 'drop the class', 'miss the bus', 'take a break'],
-    correctIndex: 0
-  },
-  {
     id: 'educ-q96',
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-96',
     type: 'drag',
     prompt: 'Let’s ____ ideas for the project.',
     options: ['brainstorm', 'graduate', 'cheat', 'drop out'],
-    correctIndex: 0
-  },
-  {
-    id: 'educ-q97',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-97',
-    type: 'choice',
-    prompt: 'Which expression means “prendre une pause”?',
-    options: ['take a break', 'take attendance', 'hit the books', 'make the grade'],
     correctIndex: 0
   },
   {
@@ -18279,15 +17997,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['crammed', 'graduated', 'skipped', 'dropped'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q99',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-99',
-    type: 'choice',
-    prompt: 'Which idiom means “réussir / être à la hauteur”?',
-    options: ['make the grade', 'miss the bus', 'drop the ball', 'cut class'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q100',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18295,14 +18005,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'He learned the ____ way to study earlier.',
     options: ['hard', 'easy', 'short', 'fun'],
-    correctIndex: 0
-  },{
-    id: 'educ-q101',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-101',
-    type: 'choice',
-    prompt: 'Which expression means “cours en ligne”?',
-    options: ['online course', 'distance learning', 'hybrid class', 'lecture'],
     correctIndex: 0
   },
   {
@@ -18314,15 +18016,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['Distance', 'Hybrid', 'Online', 'Campus'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q103',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-103',
-    type: 'choice',
-    prompt: 'Which term means “cours hybride”?',
-    options: ['hybrid class', 'online course', 'lab', 'field trip'],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q104',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18337,7 +18031,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-105',
     type: 'choice',
-    prompt: 'Which expression means “étudiant à temps plein”?',
+    prompt: 'Which expression means a student who studies full time?',
     options: ['full-time student', 'part-time student', 'gifted student', 'exchange student'],
     correctIndex: 0
   },
@@ -18355,7 +18049,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-107',
     type: 'choice',
-    prompt: 'Which term means “année de césure”?',
+    prompt: 'Which term means taking a year off between studies to work or travel?',
     options: ['gap year', 'school year', 'semester', 'trimester'],
     correctIndex: 0
   },
@@ -18373,7 +18067,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-109',
     type: 'choice',
-    prompt: 'Which word means “trimestre”?',
+    prompt: 'Which word means a three-month school term?',
     options: ['trimester', 'semester', 'school year', 'grade level'],
     correctIndex: 0
   },
@@ -18388,15 +18082,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
 
   {
-    id: 'educ-q111',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-111',
-    type: 'choice',
-    prompt: 'Which expression means “niveau scolaire / année”?',
-    options: ['grade level', 'GPA', 'degree', 'major'],
-    correctIndex: 0
-  },
-  {
     id: 'educ-q112',
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-112',
@@ -18410,7 +18095,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-113',
     type: 'choice',
-    prompt: 'Which term means “école secondaire (premier cycle)”?',
+    prompt: 'Which term means the first level of secondary school?',
     options: ['middle school', 'elementary school', 'high school', 'boarding school'],
     correctIndex: 0
   },
@@ -18423,20 +18108,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['high', 'middle', 'elementary', 'boarding'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q115',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-115',
-    type: 'choice',
-    prompt: '“College” in English can mean…',
-    options: [
-      'collège / cégep / université (selon le pays)',
-      'only high school',
-      'only elementary school',
-      'only vocational school'
-    ],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q116',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18451,7 +18123,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-117',
     type: 'choice',
-    prompt: 'Which term means “école professionnelle”?',
+    prompt: 'Which term means a school that prepares students for specific trades or jobs?',
     options: ['vocational school', 'public school', 'boarding school', 'private school'],
     correctIndex: 0
   },
@@ -18469,7 +18141,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-119',
     type: 'choice',
-    prompt: 'Which expression means “prêt étudiant”?',
+    prompt: 'Which expression means a loan taken to pay for your studies?',
     options: ['student loan', 'scholarship', 'financial aid', 'extra credit'],
     correctIndex: 0
   },
@@ -18488,7 +18160,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-121',
     type: 'choice',
-    prompt: 'Which term means “test de classement”?',
+    prompt: 'Which term means a test that decides your level or group?',
     options: ['placement test', 'entrance exam', 'final exam', 'pop quiz'],
     correctIndex: 0
   },
@@ -18506,7 +18178,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-123',
     type: 'choice',
-    prompt: 'Which term means “examen oral”?',
+    prompt: 'Which term means an exam where you answer by speaking?',
     options: ['oral exam', 'written exam', 'entrance exam', 'placement test'],
     correctIndex: 0
   },
@@ -18519,20 +18191,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['written', 'oral', 'pop', 'final'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q125',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-125',
-    type: 'choice',
-    prompt: 'Which expression means “question à choix multiples”?',
-    options: [
-      'multiple-choice question',
-      'essay question',
-      'short answer question',
-      'true/false question'
-    ],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q126',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18547,28 +18206,11 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-127',
     type: 'choice',
-    prompt: 'Which term means “moyenne générale (GPA)”?',
+    prompt: 'Which term means your overall average grade, often written as GPA?',
     options: ['grade point average (GPA)', 'grade level', 'degree', 'credit'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q128',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-128',
-    type: 'drag',
-    prompt: 'This course is graded ____. ',
-    options: ['pass/fail', 'A to F', 'online', 'oral'],
-    correctIndex: 0
-  },
-  {
-    id: 'educ-q129',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-129',
-    type: 'choice',
-    prompt: 'Which expression means “corrigé / feuille de réponses”?',
-    options: ['answer key', 'cheat sheet', 'attendance sheet', 'rubric'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q130',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18584,7 +18226,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-131',
     type: 'choice',
-    prompt: 'Which expression means “semaine consacrée au plan de cours”?',
+    prompt: 'Which expression means the first week of class when you go over the course plan?',
     options: ['syllabus week', 'finals week', 'reading week', 'exam week'],
     correctIndex: 0
   },
@@ -18602,7 +18244,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-133',
     type: 'choice',
-    prompt: 'Which expression means “politique de présence”?',
+    prompt: 'Which expression means the rules about being present in class?',
     options: ['attendance policy', 'grading scale', 'learning objectives', 'campus rules'],
     correctIndex: 0
   },
@@ -18620,7 +18262,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-135',
     type: 'choice',
-    prompt: 'Which word means “grille d’évaluation”?',
+    prompt: 'Which word means a document that explains how work will be graded?',
     options: ['rubric', 'syllabus', 'essay', 'lecture'],
     correctIndex: 0
   },
@@ -18638,7 +18280,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-137',
     type: 'choice',
-    prompt: 'Which expression means “heures de disponibilité (du professeur)”?',
+    prompt: 'Which expression means the hours when you can meet the teacher in their office?',
     options: ['office hours', 'class hours', 'break time', 'recess'],
     correctIndex: 0
   },
@@ -18656,7 +18298,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-139',
     type: 'choice',
-    prompt: 'Which word means “prolongation de délai”?',
+    prompt: 'Which word means extra time given to finish work?',
     options: ['extension', 'expulsion', 'exception', 'exam'],
     correctIndex: 0
   },
@@ -18675,7 +18317,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-141',
     type: 'choice',
-    prompt: 'Which verb means “plagier”?',
+    prompt: 'Which verb means to copy someone else’s work and pretend it is yours?',
     options: ['plagiarize', 'memorize', 'summarize', 'analyze'],
     correctIndex: 0
   },
@@ -18686,15 +18328,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'You cannot just ____ and paste from a website.',
     options: ['copy', 'talk', 'sleep', 'draw'],
-    correctIndex: 0
-  },
-  {
-    id: 'educ-q143',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-143',
-    type: 'choice',
-    prompt: 'Which word means “citation / référence”?',
-    options: ['citation', 'cheat sheet', 'chapter', 'headline'],
     correctIndex: 0
   },
   {
@@ -18711,7 +18344,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-145',
     type: 'choice',
-    prompt: 'Which word means “source”?',
+    prompt: 'Which word means a place where information comes from?',
     options: ['source', 'subject', 'student', 'schedule'],
     correctIndex: 0
   },
@@ -18729,7 +18362,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-147',
     type: 'choice',
-    prompt: 'Which expression means “style d’apprentissage”?',
+    prompt: 'Which expression means the way a person prefers to learn?',
     options: ['learning style', 'learning goal', 'study schedule', 'campus life'],
     correctIndex: 0
   },
@@ -18747,7 +18380,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-149',
     type: 'choice',
-    prompt: 'Which expression means “activité pratique”?',
+    prompt: 'Which expression means an activity where students learn by doing something?',
     options: ['hands-on activity', 'final exam', 'online course', 'group project'],
     correctIndex: 0
   },
@@ -18766,7 +18399,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-151',
     type: 'choice',
-    prompt: 'Which expression means “discussion de groupe”?',
+    prompt: 'Which expression means a conversation where several students talk together?',
     options: ['group discussion', 'group test', 'group bus', 'group uniform'],
     correctIndex: 0
   },
@@ -18784,7 +18417,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-153',
     type: 'choice',
-    prompt: 'Which expression means “soulever un point”?',
+    prompt: 'Which expression means to mention an idea so people can discuss it?',
     options: ['raise a point', 'drop a point', 'skip the point', 'erase the point'],
     correctIndex: 0
   },
@@ -18797,15 +18430,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['turns', 'books', 'notes', 'buses'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q155',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-155',
-    type: 'choice',
-    prompt: 'Which phrasal verb means “revoir / passer en revue”?',
-    options: ['go over', 'go off', 'go out', 'go away'],
-    correctIndex: 0
-  },
+
   {
     id: 'educ-q156',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -18820,7 +18445,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-157',
     type: 'choice',
-    prompt: 'Which phrasal verb can mean “parler plus fort / s’exprimer”?',
+    prompt: 'Which phrasal verb means to speak more loudly so others can hear you?',
     options: ['speak up', 'fall behind', 'drop out', 'hit the books'],
     correctIndex: 0
   },
@@ -18838,7 +18463,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-159',
     type: 'choice',
-    prompt: 'Which phrasal verb means “approfondir”?',
+    prompt: 'Which phrasal verb means to explore a topic in more detail?',
     options: ['dig deeper', 'fall behind', 'drop in', 'look over'],
     correctIndex: 0
   },
@@ -18857,7 +18482,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-161',
     type: 'choice',
-    prompt: 'Which idiom means “ouvrir un livre (pour étudier)”?',
+    prompt: 'Which idiom means to open a book in order to study?',
     options: ['crack a book', 'hit a wall', 'pull an all-nighter', 'hit the road'],
     correctIndex: 0
   },
@@ -18875,7 +18500,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-163',
     type: 'choice',
-    prompt: 'Which idiom means “réussir un examen haut la main”?',
+    prompt: 'Which idiom means to do extremely well on a test?',
     options: ['ace a test', 'hit a wall', 'fall behind', 'crack a book'],
     correctIndex: 0
   },
@@ -18893,7 +18518,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-165',
     type: 'choice',
-    prompt: 'Which idiom means “avoir le cerveau saturé”?',
+    prompt: 'Which idiom means feeling like your brain cannot take in more information?',
     options: ['brain freeze', 'lightbulb moment', 'back to square one', 'bookworm'],
     correctIndex: 0
   },
@@ -18911,7 +18536,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-167',
     type: 'choice',
-    prompt: 'Which idiom means “arriver à un blocage”?',
+    prompt: 'Which idiom means to suddenly be unable to make progress?',
     options: ['hit a wall', 'hit the books', 'sell like hotcakes', 'be full'],
     correctIndex: 0
   },
@@ -18929,7 +18554,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-169',
     type: 'choice',
-    prompt: 'Which idiom means “retour à la case départ”?',
+    prompt: 'Which idiom means having to start again from the beginning?',
     options: ['back to square one', 'piece of cake', 'big cheese', 'on the back burner'],
     correctIndex: 0
   },
@@ -18948,7 +18573,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-171',
     type: 'choice',
-    prompt: 'Which expression means “se connecter à la plateforme”?',
+    prompt: 'Which expression means to sign in to the online platform?',
     options: [
       'log in to the platform',
       'copy and paste the platform',
@@ -18971,7 +18596,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-173',
     type: 'choice',
-    prompt: 'Which expression means “télécharger les documents du cours”?',
+    prompt: 'Which expression means to save course files from the internet onto your device?',
     options: [
       'download course materials',
       'upload course materials',
@@ -18994,7 +18619,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-175',
     type: 'choice',
-    prompt: 'Which expression means “partager votre écran”?',
+    prompt: 'Which expression means to show your computer screen to others online?',
     options: ['share your screen', 'share your homework', 'share your grade', 'share your bus'],
     correctIndex: 0
   },
@@ -19012,7 +18637,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-177',
     type: 'choice',
-    prompt: 'Which expression means “plateforme d’apprentissage”?',
+    prompt: 'Which expression means a website used for taking and managing courses?',
     options: ['learning platform', 'learning bus', 'learning book', 'learning uniform'],
     correctIndex: 0
   },
@@ -19030,7 +18655,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-179',
     type: 'choice',
-    prompt: 'Which expression means “forum en ligne”?',
+    prompt: 'Which expression means a website space where people post and reply to messages?',
     options: ['online forum', 'online bus', 'online campus', 'online break'],
     correctIndex: 0
   },
@@ -19049,7 +18674,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-181',
     type: 'choice',
-    prompt: 'Which expression means “rattraper sa lecture”?',
+    prompt: 'Which expression means to get back on track with your reading?',
     options: [
       'catch up on reading',
       'fall behind on reading',
@@ -19072,7 +18697,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-183',
     type: 'choice',
-    prompt: 'Which expression means “prendre du retard dans les devoirs”?',
+    prompt: 'Which expression means to not keep up with homework?',
     options: [
       'fall behind on homework',
       'catch up on homework',
@@ -19095,7 +18720,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-185',
     type: 'choice',
-    prompt: 'Which expression means “souligner les points clés”?',
+    prompt: 'Which expression means to draw a line under the most important ideas?',
     options: [
       'underline key points',
       'delete key points',
@@ -19118,7 +18743,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-187',
     type: 'choice',
-    prompt: 'Which expression means “faire ses devoirs”?',
+    prompt: 'Which expression means to complete the exercises your teacher gives you?',
     options: ['do your homework', 'copy your homework', 'skip your homework', 'hide your homework'],
     correctIndex: 0
   },
@@ -19129,15 +18754,6 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     type: 'drag',
     prompt: 'She ____ in her assignment late.',
     options: ['turned', 'slept', 'burned', 'hid'],
-    correctIndex: 0
-  },
-  {
-    id: 'educ-q189',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-189',
-    type: 'choice',
-    prompt: 'Which expression means “montrer le raisonnement / les étapes”?',
-    options: ['show your work', 'show your bus', 'show your desk', 'show your lunch'],
     correctIndex: 0
   },
   {
@@ -19155,7 +18771,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-191',
     type: 'choice',
-    prompt: 'Which expression means “élève doué”?',
+    prompt: 'Which expression means a student with very high natural ability?',
     options: ['gifted student', 'lazy student', 'late student', 'bad student'],
     correctIndex: 0
   },
@@ -19173,7 +18789,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-193',
     type: 'choice',
-    prompt: 'Which expression means “accompagnement individualisé”?',
+    prompt: 'Which expression means support that is specially adapted to one student?',
     options: [
       'individualized support',
       'group support only',
@@ -19196,7 +18812,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-195',
     type: 'choice',
-    prompt: 'Which term means “éducation spécialisée”?',
+    prompt: 'Which term means education designed for students with special needs?',
     options: ['special education', 'public education', 'distance education', 'adult education'],
     correctIndex: 0
   },
@@ -19214,7 +18830,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-197',
     type: 'choice',
-    prompt: 'Which expression means “conseiller académique”?',
+    prompt: 'Which expression means a person who helps students choose classes and plan their studies?',
     options: ['academic advisor', 'school bus driver', 'campus guard', 'librarian'],
     correctIndex: 0
   },
@@ -19232,7 +18848,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryId: EDUCATION_CATEGORY_ID,
     wordId: 'educ-199',
     type: 'choice',
-    prompt: 'Which expression means “horaire d’étude”?',
+    prompt: 'Which expression means a planned timetable for when you will study?',
     options: ['study schedule', 'study bus', 'study wall', 'study lunch'],
     correctIndex: 0
   },
@@ -19245,15 +18861,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['lifelong', 'short', 'weekend-only', 'sleep'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q301',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-301',
-    type: 'choice',
-    prompt: 'Which term means “cours d’entrée / de base”?',
-    options: ['entry-level course', 'advanced course', 'core course', 'elective'],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q302',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -19336,15 +18944,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
 
-  {
-    id: 'educ-q311',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-311',
-    type: 'choice',
-    prompt: 'Which term means “école supérieure / cycles supérieurs”?',
-    options: ['graduate school', 'high school', 'middle school', 'boarding school'],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q312',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -19427,15 +19027,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0
   },
 
-  {
-    id: 'educ-q321',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-321',
-    type: 'choice',
-    prompt: 'Which word can mean “faculté / corps professoral”?',
-    options: ['faculty', 'department', 'campus', 'classroom'],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q322',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -19569,15 +19161,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['handout', 'holiday', 'corner', 'packet'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q335',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-335',
-    type: 'choice',
-    prompt: 'Which term means “manuel / recueil de textes du cours”?',
-    options: ['course packet', 'course outline', 'course load', 'course requirement'],
-    correctIndex: 0
-  },
+ 
   {
     id: 'educ-q336',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -19587,14 +19171,14 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['bookstore', 'corner', 'holiday', 'booth'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q337',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-337',
-    type: 'choice',
-    prompt: 'Which expression means “box / cabine d’étude”?',
-    options: ['study booth', 'study bus', 'study fair', 'study holiday'],
-    correctIndex: 0
+    {
+    "id": "educ-q337",
+    "categoryId": EDUCATION_CATEGORY_ID,
+    "wordId": "educ-337",
+    "type": "choice",
+    "prompt": "Which term refers to a small enclosed space used for studying?",
+    "options": ["study booth", "study bus", "study fair", "study holiday"],
+    "correctIndex": 0
   },
   {
     id: 'educ-q338',
@@ -19701,15 +19285,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['spring', 'winter', 'fall', 'night'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q349',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-349',
-    type: 'choice',
-    prompt: 'Which expression means “trimestre / session scolaire”?',
-    options: ['school term', 'school year schedule', 'school climate', 'school bus'],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q350',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -19761,20 +19337,7 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: ['piece', 'burn', 'skip', 'hide'],
     correctIndex: 0
   },
-  {
-    id: 'educ-q355',
-    categoryId: EDUCATION_CATEGORY_ID,
-    wordId: 'educ-355',
-    type: 'choice',
-    prompt: 'Which idiom means “prendre le coup / comprendre comment ça marche”?',
-    options: [
-      'get the hang of it',
-      'get ahead',
-      'fall behind schedule',
-      'hit a wall'
-    ],
-    correctIndex: 0
-  },
+  
   {
     id: 'educ-q356',
     categoryId: EDUCATION_CATEGORY_ID,
@@ -30808,14 +30371,14 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
 
   //enveronment questions can go here
   {
-    id: 'env-q1',
-    categoryId: ENV_CATEGORY_ID,
-    wordId: 'env-1',
-    type: 'drag',
-    prompt: '____ is the English word for “environnement”.',
-    options: ['environment', 'ecosystem', 'pollution', 'habitat'],
-    correctIndex: 0
-  },
+  id: 'env-q1',
+  categoryId: ENV_CATEGORY_ID,
+  wordId: 'env-1',
+  type: 'drag',
+  prompt: 'Human activity has a major impact on the ______.',
+  options: ['environment', 'ecosystem', 'pollution', 'habitat'],
+  correctIndex: 0
+},
   {
     id: 'env-q2',
     categoryId: ENV_CATEGORY_ID,
