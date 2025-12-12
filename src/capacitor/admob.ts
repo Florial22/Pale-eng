@@ -34,7 +34,6 @@ export async function showBottomBanner() {
   try {
     await AdMob.showBanner({
       adId: IOS_BANNER_ID,
-      isTesting: true,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
@@ -65,7 +64,6 @@ export async function showInterstitialOnce() {
     // 1) Load
     await AdMob.prepareInterstitial({
       adId: IOS_INTERSTITIAL_ID,
-      isTesting: true,
       // ⚠️ No isTesting here → real interstitial
     });
 
